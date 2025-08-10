@@ -1,0 +1,299 @@
+/* --- SIDEBAR FOUNDATION --- */
+.sidebar {
+  background-color: #1b1206;      
+  border: 2px solid #3f2805;         
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4 {
+  color: #f6eddc;                 
+  margin: 12px 0 8px;
+}
+
+/* neutralize card styles that leaked into  sidebar */
+.sidebar .info-card {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* --- DETAILS/SUMMARY AS BUTTONS --- */
+.sidebar details {
+  margin: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #365335;    
+  overflow: hidden;                     /* for rounded corners */
+  background: #264328;        
+}
+
+.sidebar summary {
+  list-style: none;                     /* hide default marker */
+  cursor: pointer;
+  display: block;
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #f4f0e6;
+  user-select: none;
+  position: relative;
+}
+
+.sidebar summary::-webkit-details-marker { display: none; }
+.sidebar summary::after {
+  content: "＋";               
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+}
+
+.sidebar details[open] summary::after { content: "–"; }
+
+.sidebar summary:hover,
+.sidebar summary:focus {
+  outline: none;
+  background: #2e5231;            
+}
+
+.sidebar details > *:not(summary) {
+  background: #1f351f;
+  padding: 12px 14px 14px;
+  color: #e9e2d4;
+  border-top: 1px solid #2f4a2f;
+}
+
+/* links inside details */
+.sidebar details a {
+  color: #d36e00;                    
+  text-decoration: underline;
+}
+.sidebar details a:hover { color: #a85800; }
+
+/* --- “IN A NUTSHELL” ->lIKE A LIST --- */
+.sidebar .sidebar-text-block {
+  background: #f7efe0;                
+  color: #2b1a05;                      
+  border: 1px solid #3f2805;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-top: 16px;
+}
+
+.sidebar .sidebar-text-block h4 {
+  color: #2b1a05;
+  margin-top: 0;
+}
+
+.sidebar .sidebar-text-block ul {
+  list-style: disc;
+  padding-left: 24px;         
+  margin: 10px 0 0;
+}
+
+.sidebar .sidebar-text-block li {
+  margin: 6px 0;
+  line-height: 1.35;
+}
+
+/* links inside the light list */
+.sidebar .sidebar-text-block a {
+  color: #8a3d00;                  
+  text-decoration: underline;
+}
+.sidebar .sidebar-text-block a:hover { color: #6f3100; }
+
+/* ---make “Explore More” feel nav-y while the list feels list-y --- */
+.sidebar .nav-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+}
+.sidebar .nav-links li {
+  margin: 6px 0;
+}
+.sidebar .nav-links a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #f4e8d0;
+}
+.sidebar .nav-links a:hover { color: #ffe3a3; }
+
+/* --- IMAGEs keep centered without fighting other pages --- */
+.sidebar .four-across {
+  text-align: center;
+}
+.sidebar .four-across .glass-frame {
+  display: inline-block;
+  margin: 6px;
+  float: none;                        
+}
+.sidebar .glass-frame img {
+  display: block;
+  margin: 0 auto 6px;
+  border-radius: 8px;
+}
+.sidebar .squirrel-name {
+  margin: 0;
+  color: #f6eddc;
+}
+
+/* ============== CONTRAST: PNW note ============== */
+/* Your "A Note on the Pacific Northwest" section has .info-card.bad in the sidebar */
+.sidebar .info-card.bad,
+.sidebar .info-card.bad p,
+.sidebar .info-card.bad h3,
+.sidebar .info-card.bad a {
+  color: #fbf6e8 !important; /* lighter text for dark brown bg */
+}
+
+/* ============== DETAILS/SUMMARY -> PARK SIGN BUTTONS ============== */
+.sidebar details {
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 2px solid #b68a5a;     /* light brown trim like a wood sign */
+  background: linear-gradient(#2b1f12, #23180e); /* subtle “woody” depth */
+  box-shadow:
+    0 2px 0 #7d5b35,             /* ridge */
+    0 6px 12px rgba(0,0,0,0.35);  /* drop */
+  overflow: hidden;
+}
+
+/* summary looks like a full-width button with no plus icons */
+.sidebar summary {
+  list-style: none;
+  display: block;
+  padding: 12px 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #f7f2e6;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  outline: none;
+  /* National Park–style vibe with tracking; keeps your current fonts as fallback */
+  font-family: "Raleway", Arial, sans-serif;
+}
+.sidebar summary::-webkit-details-marker { display: none; }
+
+/* hover/active = “pressed” 3D feel */
+.sidebar summary:hover {
+  filter: brightness(1.06);
+}
+.sidebar summary:focus-visible {
+  outline: 2px solid #ffe3a3;
+  outline-offset: 3px;
+}
+.sidebar details:active summary,
+.sidebar details[open] summary {
+  transform: translateY(1px);
+}
+
+/* the revealed body panel */
+.sidebar details > *:not(summary) {
+  background: #1e150c;
+  color: #efe7d8;
+  padding: 12px 16px 16px;
+  border-top: 1px solid #3a2a17;
+}
+
+/* links inside the details */
+.sidebar details a {
+  color: #ff9a2e;
+  text-decoration: underline;
+}
+.sidebar details a:hover { color: #d87e1f; }
+
+/* ============== MATCH THE TWO LIGHT PANELS ============== */
+/* Make “How we work to fulfill our mission” and the Explore More block match */
+.sidebar .sidebar-text-block,
+.sidebar .nav-links {
+  background: #f7efe0;
+  color: #2b1a05;
+  border: 1px solid #3f2805;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-top: 16px;
+}
+
+/* headings use darker brown (not yellow) for contrast */
+.sidebar .sidebar-text-block h4,
+.sidebar .nav-links h2,
+.sidebar .nav-links h3 {
+  color: #3f2805;
+  margin-top: 0;
+}
+
+/* lists feel like lists, not nav */
+.sidebar .sidebar-text-block ul,
+.sidebar .nav-links ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 10px 0 0;
+}
+.sidebar .sidebar-text-block li,
+.sidebar .nav-links li { margin: 6px 0; }
+
+/* links inside the light panels */
+.sidebar .sidebar-text-block a,
+.sidebar .nav-links a {
+  color: #7a3a09;
+  text-decoration: underline;
+}
+.sidebar .sidebar-text-block a:hover,
+.sidebar .nav-links a:hover { color: #5f2d06; }
+
+/* ============== QUIZ: TURN LINK INTO A CTA BUTTON ============== */
+/* No HTML change needed: target the quiz link by its URL */
+.sidebar .nav-links a[href*="Squirrel-Personality-Quiz"] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #b68a5a;
+  background: linear-gradient(#f4d29b, #eac477);
+  color: #2b1a05;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 0 #947449, 0 6px 12px rgba(0,0,0,0.18);
+}
+.sidebar .nav-links a[href*="Squirrel-Personality-Quiz"]:hover {
+  filter: brightness(1.05);
+}
+.sidebar .nav-links a[href*="Squirrel-Personality-Quiz"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 #947449, 0 4px 9px rgba(0,0,0,0.18);
+}
+
+/* ============== “JOIN US” BIG FULL-WIDTH BUTTON ============== */
+.sidebar .join-callout {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 2px solid #b68a5a;
+  background: linear-gradient(#ffe08a, #f7e4ab);
+  color: #2b1a05;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  box-shadow: 0 3px 0 #a57e4d, 0 10px 18px rgba(0,0,0,0.2);
+  transition: transform 80ms ease, box-shadow 80ms ease, filter 120ms ease;
+}
+.sidebar .join-callout:hover {
+  filter: brightness(1.03);
+}
+.sidebar .join-callout:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 #a57e4d, 0 7px 14px rgba(0,0,0,0.2);
+}
+.sidebar .join-callout:focus-visible {
+  outline: 2px solid #7a3a09;
+  outline-offset: 3px;
+}

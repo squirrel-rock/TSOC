@@ -1,0 +1,73 @@
+
+
+
+/* douglas table */
+
+
+ 
+.compare-button {
+  background-color: #446d3e;
+  color: #fff;
+  padding: 12px 20px;
+  margin-top:30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.compare-button:hover {
+  background-color: #345c30;
+}
+
+/* squirrel size table */
+
+.squirrel-size-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fdfaf4;
+}
+
+.squirrel-size-table th,
+.squirrel-size-table td {
+  padding: 12px;
+  border: 1px solid #aaa;
+}
+
+.native-header {
+  background-color: #c5d4c1; /* lt green */
+  color: #1b1606;
+  font-weight: bold;
+}
+
+.introduced-header {
+  background-color: #e0d0d0; /* soft red */
+  color: #3f0f0f;
+  font-weight: bold;
+}
+
+.squirrel-size-table tbody td {
+  background-color: #fffaf0;
+}
+
+.smallTable.center {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.squirrel-size-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: auto;
+}
+.squirrel-size-table .introduced {
+  background-color: #b46c5d; 
+  color: #1b1606;
+}

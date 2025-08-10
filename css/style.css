@@ -1,0 +1,797 @@
+.faq h1{
+
+  min-width:250px;
+}
+
+
+
+/* BACKGROUNDS */
+
+.twoSquirtle {
+
+  background-color:black;
+  border-left:0px;
+  border-right:0px;
+  text-align:center;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+}
+
+.banner-top {
+      width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: left;
+  background-image: url(../photos/backgrounds/redwood-dougladPeek.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:250px;
+}
+
+
+
+.banner-top h1 {
+   
+  color: rgb(199, 228, 137);
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.6), 
+    0 0 6px rgba(255, 255, 255, 0.4), /* soft white glow */
+    0 0 12px rgba(255, 245, 210, 0.3); /* extendeing the fade */
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/*.banner-top h1{
+   color: #d3a90f;
+   color: #e1bd8d;
+   color: #fefcf8;
+} */
+
+.forest-bckgd {
+       width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackUniformS.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest-bckgd  h2{
+   color: #d3a90f;
+}
+
+.forest-background-up {
+       width: 100%;
+ padding: 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackgroundLookUp.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.forest-background-up h1 {
+  font-size:72px; 
+  font-weight: 800;
+  color: #e1f0c4;  
+  text-align: center;
+-webkit-text-stroke: 1px rgba(0,0,0,0.3);
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.7),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+
+.words-bckgd {
+  padding:0px;
+       width: 100%;
+position: relative;
+ height:222px;
+ color: #d3a90f;
+  text-align: center;
+  background-image: url(../graphics/Sciuridae4WordCloud.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid #d3a90f;
+  border-bottom: 2px solid #d3a90f;
+    box-sizing: content-box;
+}
+
+.words-bckgd  h2{
+   color: #d3a90f;
+}
+/*
+.words-bckgd h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #280707;
+  color: #d3a90f;
+  padding: 24px 24px;
+  margin: 0; 
+
+}*/
+
+.words-bckgd h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);  /* only centeing horizontally */
+  
+  width: 250px;
+  height: 222px;
+  background-color: #280707;
+  color: #d3a90f;
+color: #df9535;
+  padding: 0; 
+  margin: 0;
+
+  line-height: 222px;  /* to vertically center the text inside */
+  text-align: center;
+  font-size: 48px; 
+}
+
+
+
+.faq h1{
+
+  min-width:250px;
+}
+
+
+
+
+
+/* -------------------------------------*/
+/* WORD CLOUD */
+.wordcloud-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wordcloud-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* THUMBNAILS */
+.thumbnail-row {
+  text-align: center;
+  margin: 16px auto;
+}
+
+.thumbnail-row a {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.thumbnail-row img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* SPECIES HEADER */
+.species-banner {
+  text-align: center;
+  padding: 20px 10px;
+
+}
+
+.species-banner a {
+  display: inline-block;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+
+
+.glass-frame2 {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  width: 21%; 
+  min-width: 180px;
+}
+
+.glass-frame2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.glass-frame2:hover {
+  transform: scale(0.96);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
+}
+
+
+/* make rows of images */
+.three-across{
+ text-align: center;
+ display:block;
+}
+
+
+.icons {
+  text-align: center;
+}
+/*.icons img {
+  width: 80px;
+  height: auto;
+}*/
+
+p.three-across
+ {
+  text-align: center;
+}
+
+p.four-across {
+  width: 100%;
+  margin: 0;
+  padding: 24px 0;
+  text-align: center;
+  background-color: #fefcf8; 
+  border-radius:8px;
+
+}
+
+
+p.three-across img {
+  width: 27%;
+  height: auto;
+}
+
+p.three-across.acorn img  {
+  width: 200px;
+  height: auto;
+}
+
+p.four-across img {
+  width: 20%;
+  height: auto;
+}
+
+
+
+/* make image or div fit to full width */
+.fullwidth { /* old fullwidth rule */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.fullwidth img {/* old fullwidth rule */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom:30px;
+}
+
+.img-contained {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-fullwidth {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.div-fullwidth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.fullwidth.s1440 img {
+  width: 100%;
+ max-width:1440px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+/* --------------------------- */
+/*         INFO BOXES.        */
+.intro-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px 32px;
+  background-color: #fefcf8;
+  border: 4px double #2e531c;
+  color: #2D2D2B;
+  border-radius:8px;
+  font-size: 24px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* title - font weight 600 */
+.intro-box .title600 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #4d3c36;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 26px text */
+.intro-box .text26 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #2D2D2B;
+}
+
+.intro-box .text-invader {
+  font-weight: 600;
+  color: #6e2e28;
+  margin-top: 20px;
+}
+/* ------- */
+
+
+/* -- */
+
+.info-box {
+margin: 40px auto;
+width:80%;
+    max-width: 1920px;
+    background-color: #f3f3f2;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box.left {
+margin: 20px auto;
+width:80%;
+    max-width: 1440px;
+       background-color: #f6f6f6;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align:left;
+}
+
+
+.info-box-coral {
+margin: 20px auto;
+  width: 80%;
+    max-width: 1440px;
+ background-color: #ffffff;
+    border:3px double rgb(77, 2, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+.info-box-green {
+margin: 20px auto;
+  width: 80%;
+    max-width: 1440px;
+ background-color: #e7eae4;
+    border:3px double rgb(8, 77, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+
+
+
+.spec-box {
+  background-color: #f2f8ed;
+  border: 2px solid #6c8a5d;
+
+  padding:36px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+/* Info-Card Rules */
+
+/* =====/==== INFO CARD BASE  ==//=== */
+.info-card {
+  margin: 32px auto;
+  width: 80%;
+ 
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  color: #1f1f1f;
+  background-color: rgba(0,0,0,0.03);
+  border: 2px solid #3f3d3a; /* default gray */
+}
+
+.info-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-card h4 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.info-card p.ident {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.info-card img {
+  max-width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.info-card.full img {
+  max-width: 95%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* ====================. info-card-dark ===================*/
+.info-card-dark {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #4a3a1f; 
+  color: #f5e9c8; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4); 
+}
+
+/* Headings inside .info-card-dark */
+.info-card-dark h3 {
+  color: #e1bd8d; 
+  font-weight: 600;
+}
+
+.info-card-dark h4 {
+  color: #d3920f; 
+  font-weight: 500;
+}
+
+/* paragraph on dark card */
+.info-card-dark p {
+  color: #f0e8c2; 
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* quote text */
+.info-card-dark .quote {
+  color: #ffe7a0;
+  font-style: italic;
+}
+
+/* images */
+.info-card-dark img {
+  border: 1px solid #c8b278;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+/*-- theme color backgrounds */
+
+
+/* neutral */
+.neutral {
+  background-color: #f3f2ef;
+  border: 2px solid #888379;
+  color: #3a3a3a;
+}
+
+.neutral h3,
+.neutral h4 {
+  color: #3a3a3a;
+}
+
+/* good green */
+.good {
+  background-color: #eef4ec;
+  border: 2px solid #446d3e;
+  color: #345c30;
+}
+
+.good h3,
+.good h4 {
+  color: #345c30;
+}
+
+/* Bad red*/
+.bad {
+  background-color: #f7f1ee;
+  border: 2px solid #8b4b3e;
+  color: #6e2e28;
+}
+
+.bad h3,
+.bad h4 {
+  color: #6e2e28;
+}
+
+/* Dark */
+.dark {
+  background-color: rgba(0,0,0,0.08);
+  border: 2px solid #704300;
+  color: #4f4200;
+}
+
+.dark h3,
+.dark h4 {
+  color: #3a3a3a;
+}
+
+
+/*dark2 */
+.dark2 {
+  background-color: rgba(0,0,0,0.08);
+  border-top: 2px solid #704300;
+  color: #4f4200;
+  padding-bottom:8px;
+}
+
+.dark2 h3,
+.dark2 h4 {
+  color: #3a3a3a;
+}
+
+
+/* Darker */
+.darker {
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid #704300;
+  color: #ece3b4;
+}
+
+.darker h3,
+.darker h4 {
+  color: #f3d389;
+}
+
+/*Identification page*/
+
+
+
+.native {
+    background-color: #c7e489;
+}
+
+h2.native {
+    color:#3A5201;
+}
+
+
+.invader {
+    background-color: rgb(95, 2, 2);
+     color:#ffeeea;
+}
+
+
+h2.invader,
+h3.invader,
+h4.invader {
+     background-color: rgb(95, 2, 2);
+    color:#ffeeea;
+}
+
+/* SPECIES PAGE */
+.glass-frame {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(144, 154, 148, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+.glass-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+
+
+.squirrel-box {
+  max-width: 80%;
+  margin: 24px auto 40px auto;
+  padding: 24px 30px;
+  background-color: #fdfcf9;
+  border: 2px solid #c4c2b8;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+}
+
+.squirrel-box ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.squirrel-box li {
+  margin-bottom: 10px;
+}
+
+.box-heading { /* for squirrel fact list on species.html */
+  margin-top: 0;
+  color: #3a3a3a;
+  font-size: 20px;
+}
+
+
+
+/* outer skin  */
+.uber-block {
+  max-width: 1440px;
+  margin: 24px auto 40px auto;
+  padding: 24px 30px;
+  background-color: #dedddc;
+
+}
+
+/*  list styling. */
+.list-block {
+  max-width: 80%;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: #fdfdfb;  /* softer  */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+
+/* increases font size and dark greem  color*/
+.highlight-species {
+  font-weight: 700;
+  font-size: 110%;
+  color: #2a4f2e; /* dark  green */
+  letter-spacing: 0.2px;
+}
+
+
+   /* --- FORCE CENTERING ---*/
+     .center {
+        text-align: center !important;
+        margin: 24px auto;
+      }
+
+/* identification page. */
+.info-card,
+.list-block,
+blockquote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tc, 
+.bc {
+  text-align:center !important;
+       margin: 24px auto;
+  display: block;
+}
+
+
+/* index.html thumbnails.  */
+
+.squirrel-natives {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.thumbnail-duo {
+  max-width: 200px;
+  width: 42%;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .thumbnail-duo {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 12px auto;
+  }
+}
+
+
+/*.   figure.  */
+.fig-faq {
+
+    float: left;
+    width: 220px;
+    margin: 6px 28px 6px 0;
+    text-align: center;
+  
+}
+
+.fig-cap-faq {
+
+  font-size: 14px;
+  color: rgb(95, 2, 2);
+  margin-top: 4px;
+}
+
+.faq .banner-top h1,
+.fullwidth .banner-top {
+   color: #d37e0f;
+  font-weight: 900;
+  font-size: 66px;
+
+
+  /* Glowing blurred dark shadow */
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.6),
+    0 2px 12px rgba(0, 0, 0, 0.8),
+    2px 4px 18px rgba(0, 0, 0, 0.4);
+ 
+
+}
+
+.banner-top {
+  width: 100%;
+  padding: 70px 30px 50px 30px;
+  text-align: left;
+  background-image: url(../photos/backgrounds/redwood-dougladPeek.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+
+  color: rgb(199, 228, 137);
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 245, 210, 0.3);
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}

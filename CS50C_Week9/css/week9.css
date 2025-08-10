@@ -1,0 +1,33 @@
+
+#mymap {
+    width:100vw;
+    height:80vh;
+}
+
+#leafMap {
+    width:100vw;
+    height:80vh;
+}
+  
+}
+#controls {
+  width:100vw;
+  height:10vh;
+  background:#222230;
+}
+body {
+  margin:0;
+}
+.brand {
+  color:#bdadad;
+  font-family:Impact,sans-serif;
+  font-size:18px;
+  display:inline-block;
+  padding:10px;
+}
+#controls a {
+  color:#bdadad;
+  text-decoration:none;
+  display:inline-block;
+  padding:10px;
+}

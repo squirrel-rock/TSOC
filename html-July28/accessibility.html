@@ -1,0 +1,31 @@
+<div style="margin: 40px 0;">
+
+  <!-- BAD EXAMPLE -->
+  <div style="background-color: #eeeeee; padding: 10px; font-size: 10px; color: #cccccc; font-family: Comic Sans MS, cursive;">
+    <p><span style="color: #bbbbbb;">🚫 BAD EXAMPLE</span></p>
+    <p style="letter-spacing: 3px; line-height: 0.9;">“ACCESSIBILITY IS NOT SOMETHING WE ADD TO A WEBSITE BUT SOMETHING WE START WITH INITIALLY.”</p>
+    <p style="transform: rotate(0.5deg); color: #d0d0d0;">– SCOTT JEHL, FRONT-END ENGINEER ⚙️ <span style="animation: spin 2s linear infinite;">🌀</span></p>
+    <button style="font-size: 8px; padding: 2px 4px; background-color: #f0f0f0; border: 1px solid #aaa; border-radius: 2px;">Read More</button>
+  </div>
+
+  <!-- Accessible styles -->
+  <div style="background-color: #f3faff; padding: 24px; margin-top: 40px; font-family: Arial, sans-serif; color: #222;">
+    <p style="font-weight: bold; font-size: 14px;">✅ GOOD EXAMPLE</p>
+    <blockquote style="font-size: 20px; line-height: 1.6; color: #000;">
+      “Accessibility is not something we add to a website, but something we start with initially—and risk losing with every single change. Our task is to retain it throughout the design process.”
+    </blockquote>
+    <p style="font-size: 16px; font-style: italic;">– Scott Jehl, Front-End Engineer</p>
+    <button style="font-size: 16px; padding: 10px 16px; background-color: #007acc; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      Read More
+    </button>
+  </div>
+
+</div>
+
+<!-- Optional funny CSS -->
+<style>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>

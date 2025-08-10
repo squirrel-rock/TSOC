@@ -1,0 +1,45 @@
+
+{
+  "places": [
+    {
+      "place": "Bowling Ball Beach",
+      "squirrels": ["Douglas", "Western Gray", "Humboldt's Flying"],
+      "lat": 38.87, 
+      "lng":-123.67,
+      "elevation": "0",
+      "description": "<p>Humboldt's Flying Squirrel is nocturnal and forages mostly at night. Rarley observed, it can be found in old growth and second growth redwood, spruce, and hemlock forests. This west coast species is older and genetically distinct from the two other types of flying squirrels in North America, the Northern <span class='tooltip'>Glaucomys sabrinus</span> and Southern Flying Squirrels. This cryptic species was only discovered through DNA studies in 2017. All three species of flying squirrel fluoresce pink at night under uv light, but the purrpose of this fluorescence remains unkown.</p><p><a href=\"http://en.wikipedia.org/wiki/HumboldtsFlyingSquirrel\" target=\"_blank\">Wikipedia</a></p>"
+    },
+    {
+      "place": "Olmstead Point",
+      "squirrels": ["Douglas", "Western Gray", "Humboldt's Flying"],
+      "lat": 37.81,
+      "lng": -119.484547,
+      "elevation": "light brown]",
+      "description": "<p>Humboldt's Flying Squirrel is nocturnal and forages mostly at night. Rarley observed, it can be found in old growth and second growth redwood, spruce, and hemlock forests. This west coast species is older and genetically distinct from the two other types of flying squirrels in North America, the Northern <span class='tooltip'>Glaucomys sabrinus</span> and Southern Flying Squirrels. This cryptic species was only discovered through DNA studies in 2017. All three species of flying squirrel fluoresce pink at night under uv light, but the purrpose of this fluorescence remains unkown.</p><p><a href=\"http://en.wikipedia.org/wiki/HumboldtsFlyingSquirrel\" target=\"_blank\">Wikipedia</a></p>"
+    },
+    {
+      "place": "Jedediah Smith Redwoods State Park",
+      "squirrels": ["Douglas", "Western Gray", "Humboldt's Flying"],
+      "lat": 41.124859, 
+      "lng": -124.149959,
+      "elevation": "light brown]",
+      "description": "<p>Humboldt's Flying Squirrel is nocturnal and forages mostly at night. Rarley observed, it can be found in old growth and second growth redwood, spruce, and hemlock forests. This west coast species is older and genetically distinct from the two other types of flying squirrels in North America, the Northern <span class='tooltip'>Glaucomys sabrinus</span> and Southern Flying Squirrels. This cryptic species was only discovered through DNA studies in 2017. All three species of flying squirrel fluoresce pink at night under uv light, but the purrpose of this fluorescence remains unkown.</p><p><a href=\"http://en.wikipedia.org/wiki/HumboldtsFlyingSquirrel\" target=\"_blank\">Wikipedia</a></p>"
+    }
+    {
+      "place": "University of California, Davis",
+      "squirrels": ["Fox"],
+      "lat": 41.124859, 
+      "lng": -124.149959,
+      "elevation": "light brown",
+      "description": "<p> UC Davis officials launched a birth-control research program to curb a campus population explosion of non-native tree squirrels.\n'In seven years, we went from having no eastern fox squirrels on the campus to having more than 400, and there is currently no sign that their reproduction is slowing down', Krause said this week. 'This is an introduced species that has demonstrated elsewhere that it is prolific, adaptable, invasive and problematic for many reasons.' said Krause</p><p><a href=\"https://www.ucdavis.edu/news/troublesome-non-native-squirrels-will-get-birth-control-shots\" target=\"_blank\">Squirrel Birth Control News</a></p>"
+      }
+
+    }
+  ]
+}
+
+
+
+
+
+

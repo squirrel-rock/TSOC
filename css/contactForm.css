@@ -1,0 +1,92 @@
+.contact-form{
+    width:75%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f2e7d5;
+   border: 2px solid #3f2805;
+  border-radius: 12px;
+  color: #1b1606;
+}
+
+.contact-form label
+{
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #3f2805;
+}
+
+.contact-form legend {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #3f2805;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 20px;
+
+}
+
+.contact-form fieldset {
+  border: none;
+  margin-top: 5px;
+}
+
+.contact-form fieldset label {
+  display: block;
+  margin: 6px 0;  
+  
+}
+.contact-form button {
+  background-color: #d37e0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a25f09;
+}
+
+/* -- honeypot -- */
+.squirrel {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.paragraph-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.to-left {
+  border-left: 4px solid #000;
+}
+
+.douglas {
+  background-color: #d6e5d6;
+}
+
+.douglas-header {
+  background-color: #c9dbc9;
+}

@@ -1,0 +1,39 @@
+
+{
+  "places": [
+    
+    {
+      "place": "Evergreen Elementary School, San Jose, CA<br> May 9, 2010",
+      "title": "Squirrel attack? or just a frightened young squirrel?",
+      "squirrels": ["Fox"],
+      "lat": 37.2505828,
+      "lng": -121.8965849,
+      
+      "description": "<p><a href='https://www.sfgate.com/bayarea/article/san-jose-squirrel-attacks-3-at-school-2595357.php'>SF Gate version of story:</a> <br> <br> <strong>A squirrel went on the attack </strong>in a San Jose elementary school on Wednesday, <span style='color:darkred'>bloodying </span>an 11-year-old girl and a parent in a slashing, biting assault and injuring a second grown-up before making its escape.</p><p>The <strong>San Jose Mercury News</strong> displayed more balanced journalism with a less sensational version of the same story - but the paper is behind a paywall, so here is an excerpt: A squirrel bit an 11-year-old girl and two adults after scurrying into an open classroom at a South San Jose elementary school this morning, drawing police and animal control to the campus.<br><br> It came through the open door shortly after 8:30 a.m. Perhaps confused by the cacophony that is the start of the day in a first grade class, the critter ran up the nearest thing it could find, a parent-chaperon’s leg. <br><br>The unusual attack was over in seconds, with the animal – possibly a confused and frightened adolescent – quickly disappearing. ‘I think any animal that is cornered is going to do that fight-and-flight thing,” operations director of the Wildlife Center of Silicon Valley Janet Alexander Thompson said. “He probably didn’t mean to come into the classroom.’ `"
+    },
+  
+    {
+      "place": "University of California, Davis",
+      "title": "Contraceptive study for Fox squirrel population control.",
+      "squirrels": ["Fox"],
+      "lat": 38.550741,  
+      "lng": -121.739038,
+      
+      "description": "<p> 'In seven years, we went from having no eastern fox squirrels on the campus to having more than 400, and there is currently no sign that their reproduction is slowing down', Krause said this week. 'This is an introduced species that has demonstrated elsewhere that it is prolific, adaptable, invasive and problematic for many reasons.' said Krause.<br><br>At U.C. Davis, Dr. Sara Krause conducted research on birth control as a population control method for the invasive and rapidly expanding Fox Squirrel population.  Her birth-control research program is intended to curb a campus population explosion of non-native tree squirrels.<br></p><p><a href=\"https://www.ucdavis.edu/news/troublesome-non-native-squirrels-will-get-birth-control-shots\" target=\"_blank\">Squirrel Birth Control News</a></p>"
+      },
+    {
+      "place": "A case for CYBER SQUIRREL",
+      "title": "Mapping power outages caused by squirrels - <a href='https://cybersquirrel1.com/'>Cyber Squirrel Map</a>",
+      "squirrels": ["Fox"],
+      "lat": 37.864473, 
+      "lng": -122.054962,
+      "description": "<p>Squirrels are the #1 disruptors of electrical power grids worldwide. Here are some examples local to the SF Bay Area:</p><ul><li><strong>Walnut Creek, CA - Wildfire (Sep 3, 2009):</strong> A squirrel entangled in a power line sparked a fast-moving brush fire requiring dozens of helicopter and tanker drops along with hand crews from Cal-Fire, Contra Costa Fire, and East Bay Regional Parks. Two firefighters were injured; one suffered an ankle injury and the other a knee injury. Investigations revealed a downed power line and a dead squirrel found at the base of a power pole.</li><li><strong>Sebastopol, CA - Power Outage (2010):</strong> A squirrel downed a transformer in Sebastopol, causing a power outage that affected hundreds of homes.</li><li><strong>West Lafayette, CA - Power Outage (June 27, 2012):</strong> A squirrel crawled into a transformer causing a power outage affecting 2,463 homes.</li><li><strong>East Bay, and Berkeley BART (2015):</strong> PG&E says a squirrel caused an outage that impacted 45,000 customers in the East Bay, causing the Berkeley BART station to shut down from 8 to 10 pm on a Monday night.</li><li><strong>City of Berkeley (May 17, 2018):</strong> Power outage caused by a squirrel affects more than 5,800 customers in Berkeley. By Revati Thatte.</li></ul><p>To bring incidents like these to light, an investigator who goes by the name of 'Cyber Squirrel' started a website to track worldwide power outages due to animals. You can sort by animal. Squirrels rank at the top of the list! <a href='https://cybersquirrel1.com/'>Cyber Squirrel Map</a></p>"
+    }
+
+
+    
+  ]
+}
+
+
+

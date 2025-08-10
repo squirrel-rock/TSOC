@@ -1,0 +1,692 @@
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Park';
+  src: url('../fonts/NationalPark/NationalPark-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* --------------------------------------------------------------------*/
+
+/* setting this globally */
+* { box-sizing: border-box; }
+
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0e9db;
+    text-align:left;
+    color: #2D2D2B;
+      
+    font-size: 20px;
+    line-height: 1.7;     
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+
+  padding: 0 24px;
+  margin: 0 auto;
+}  
+
+
+    h1 {
+   
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        font-size: 48px;
+        margin-top: 1em;
+        color: #7A463A; /* redwood  */
+      }
+
+
+h2 {
+
+  font-weight: 200;
+  font-size:32px;
+ text-transform: uppercase;
+    text-align: center;
+  color: #2F5D3A; 
+  /*background-color: #ede9dd;*/
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.3px;
+  padding: 20px 0px;
+  margin-top: 1em;
+}
+
+
+      h3 {
+
+        color: #4D3C36;
+        margin-top: 1em;
+        font-size:28px;
+         text-align: center;
+      }
+
+
+h4 {
+  font-size: 24px;
+  color: #6C8A5D;
+
+  font-weight: 600;
+  margin-top: 1em;
+ text-align: center;
+}
+
+h5 {
+  
+  font-size: 20px;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+body.about h1,
+body.faq h1,
+div.left h1 {
+ text-align: left;
+
+}
+
+
+footer h2,
+footer h3 {
+  text-align: center;
+}
+
+a {
+  color: #6C8A5D; /* mossy green */
+}
+
+a:hover {
+  color: #D3A95C; /* goldy  */
+}
+
+blockquote {
+  text-align:left;
+  font-family: 'National Park', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  border-left: 4px solid #263401;
+  margin: 2em auto;
+  padding: 16px 24px;
+  max-width: 700px;
+  background-color: #F7F5F0;/* warm light yellow ivory */
+  color: #152802;
+}
+
+
+
+.caption {
+
+    text-align: center;
+    font-size:16px;
+    color:rgb(95, 2, 2);/* burgundy red*/
+    margin-top:-24px;
+}
+
+
+
+      p {
+         font-family: 'National Park', serif;
+         font-weight:300;
+         text-align:left;
+       font-size:20px;
+        margin-bottom: 16px;
+      
+      }
+
+      p.center img{
+        text-align:center;
+      }
+
+      p.center {
+        text-align:center;
+      }
+
+      div.center {
+        text-align:center;
+      }
+
+      p.left{
+        text-align:left;
+      }
+
+
+body.home,
+body.identification {
+                text-align:center;
+            }
+
+body.home p,
+body.identification p {
+                text-align:left;
+            }
+
+
+
+    
+      ul {
+        font-family: 'Raleway', sans-serif;
+        font-weight:300;
+       max-width:600px; 
+       margin:auto; 
+       line-height:1.6;
+      }
+
+      li {
+        margin-bottom: 8px;
+        text-align:left;
+
+      }
+
+      img {
+        margin: 16px auto;
+        max-width: 1200px;
+        height: auto;
+      }
+
+     
+      cite {
+        font-family: 'Raleway', sans-serif;
+        display: block;
+        margin-top: 8px;
+        text-align: right;
+        font-size: 14px;
+        color: #666;
+      }
+
+      q {
+        color: darkolivegreen;
+      }
+
+     
+
+
+/* hr styles */
+
+
+.shorty {
+    max-width:500px;
+    margin: 24px auto; 
+}
+
+.branch-divider {
+  border: none;
+  background: url('../graphics/SVG/1treeBranchBare.svg') center center no-repeat;
+  background-size: contain;
+  height: 40px;        
+  width: 60%;
+  max-width: 700px;    
+  margin: 24px auto;
+}
+
+.branch2-divider {
+  border: none;
+  background: url('../graphics/SVG/branch2-Bare.svg') center center no-repeat;
+  background-size: contain;
+  height: 60px;        
+  width: 75%;
+  max-width: 1200px;    
+  margin: 24px auto;
+}
+
+.branchLeaf-divider {
+  border: none;
+  background: url('../graphics/SVG/branchGreenLeaves.svg') center center no-repeat;
+  background-size: contain;
+  height: 40px;        
+  width: 75%;
+  max-width: 1000px;    
+  margin: 24px auto;
+}
+
+.py-10{
+    padding: 10px 0px;
+}
+
+.py-20{
+    padding: 20px 0px;
+}
+
+.py-30{
+    padding: 30px 0px;
+}
+
+.px-30{
+    padding: 0px 30px;
+}
+
+
+
+.my-10{
+    margin: 10px 0px;
+}
+
+.my-20{
+    margin: 20px 0px;
+}
+
+.my-30{
+    margin: 30px 0px;
+}
+
+
+/* end hr styles */
+
+/* BACKGROUNDS */
+.banner-top {
+      width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+  text-align: center;
+  background-image: url(../photos/backgrounds/redwood-dougladPeek.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-top h1{
+   color: #d3a90f;
+}
+
+.forest-bckgd {
+       width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackUniformS.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest-bckgd  h2{
+   color: #d3a90f;
+}
+/*
+.words-bckgd {
+       width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+  text-align: center;
+  background-image: url(../graphics/Sciuridae4WordCloud.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.words-bckgd  h2{
+   color: #d3a90f;
+}
+.words-bckgd  h1{
+   color: #d3a90f;
+   background-color: #280707;
+   padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-block; 
+}*/
+/* -------------------------------------*/
+/* WORD CLOUD */
+.wordcloud-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wordcloud-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* THUMBNAILS */
+.thumbnail-row {
+  text-align: center;
+  margin: 16px auto;
+}
+
+.thumbnail-row a {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.thumbnail-row img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+
+
+/* SPACER BOXES */
+   .spaceboxWhite {
+    background-color: #f0e9db;
+    padding: 5px;
+    max-width:80%;
+    margin-bottom:15px;
+    text-align: center;
+   }
+    .spaceboxGreen {
+    background-color: #d7e3d1;
+    padding: 10px; 
+    margin-bottom:15px; 
+    text-align: center;
+    margin-top: -30px;
+   }
+
+   .spaceboxGold {
+background-color: #d3a90f;
+color:rgb(77, 65, 1);
+padding: 10px; 
+margin-top: -15px;
+
+text-align: center;
+
+   }
+
+
+
+
+/* make rows of images */
+
+p.three-across,
+p.four-across {
+  text-align: center;
+}
+
+p.three-across img {
+  width: 28%;
+  height: auto;
+}
+
+p.three-across.acorn img  {
+  width: 200px;
+  height: auto;
+}
+
+p.four-across img {
+  width: 22%;
+  height: auto;
+}
+
+
+
+/* make image fit to full width */
+.fullwidth {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.fullwidth img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom:30px;
+}
+
+.fullwidth.s1440 img {
+  width: 100%;
+ max-width:1440px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/* --------------------------- */
+/*         INFO BOXES.        */
+
+
+
+.info-box {
+margin: 20px auto;
+width:80%;
+    max-width: 1440px;
+    background-color: #f6f6f6;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box.left {
+margin: 20px auto;
+width:80%;
+    max-width: 1440px;
+       background-color: #f6f6f6;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align:left;
+}
+
+
+.info-box-coral {
+margin: 20px auto;
+  width: 80%;
+    max-width: 1440px;
+ background-color: #ffffff;
+    border:3px double rgb(77, 2, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+.info-box-green {
+margin: 20px auto;
+  width: 80%;
+    max-width: 1440px;
+ background-color: #e7eae4;
+    border:3px double rgb(8, 77, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+
+
+
+.species-box {
+  background-color: #f2f8ed;
+  border: 2px solid #6c8a5d;
+  border-radius: 8px;
+  padding:24px;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* INFO CARDS */
+
+
+.info-card {
+  margin: 32px auto;
+  width: 90%;
+  max-width: 1000px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.info-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-card h4 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.info-card p.ident {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.info-card img {
+
+  max-width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+ 
+}
+
+.info-card.full img {
+  max-width: 95%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+ 
+}
+
+/* transparent info card */
+.info-card {
+  background-color: rgba(0,0,0,0.03);
+  border: 2px solid #3f3d3a;  /* dark gray */
+}
+
+.info-card h3,
+.info-card h4 {
+  color: #3a3a3a;
+}
+
+.info-card.neutral .invader h4{
+     background-color: rgb(95, 2, 2);
+    color:#ffeeea;
+}
+
+/* dark info card */
+.info-card.dark {
+  background-color: rgba(0,0,0,0.08);
+  border: 2px solid #704300;  /* burnt orange */
+  color:#ece3b4;
+}
+
+.info-card.dark h3,
+.info-card.dark h4 {
+  color: #3a3a3a;
+}
+
+/* neutral info card */
+.info-card.neutral {
+  background-color: #f3f2ef;  /* light gray */
+  border: 2px solid #888379;  /* medium gray */
+}
+
+.info-card.neutral h3,
+.info-card.neutral h4 {
+  color: #3a3a3a;
+}
+
+/* good Info Card -  Green */
+.info-card.good {
+  background-color: #eef4ec; /* light sage */
+  border: 2px solid #446d3e; /* forest moss */
+}
+
+.info-card.good h3,
+.info-card.good h4 {
+  color: #345c30;
+}
+
+/* bad Info Card -  Red */
+.info-card.bad {
+  background-color: #f7f5ee; /* light clay */
+  border: 2px solid #8b4b3e; /* iron clay */
+}
+
+.info-card.bad h3,
+.info-card.bad h4 {
+  color: #6e2e28;
+}
+
+
+
+
+/*Identification page*/
+
+
+.ident {
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+    font-size:14px;
+    color:rgb(95, 2, 2); 
+    margin-top:-24px;
+}
+
+.native {
+    background-color: #c7e489;
+}
+
+h2.native {
+    color:#3A5201;
+}
+
+
+.invader {
+    background-color: rgb(95, 2, 2);
+     color:#ffeeea;
+}
+
+
+h2.invader,
+h3.invader,
+h4.invader {
+     background-color: rgb(95, 2, 2);
+    color:#ffeeea;
+}
+
+  .center {
+        text-align: center !important;
+        margin: 24px auto;
+      }

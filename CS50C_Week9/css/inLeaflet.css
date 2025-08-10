@@ -1,0 +1,235 @@
+body {
+  background-color: #ffffff;
+}
+
+
+
+.btn {
+  background-color: #f8f8f7;
+  color: black;
+  border-color: #000000;
+  margin: 5px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+.btn:hover {
+  color:#121211;
+  background-color: #e9e6e2;
+  border-color: #e9d972;
+ 
+  
+}
+
+.btn {
+  border: 2px solid transparent; 
+  font-weight: bold; 
+  padding: 0.4rem 1rem; 
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease; 
+  white-space: nowrap;
+}
+
+.btn:hover, .btn:focus {
+ 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.leaf-icon .leaflet-marker-shadow,
+.ground-icon .leaflet-marker-shadow {
+  opacity: 0.3; 
+}
+
+.btn.active {
+  background-color: #c4b0b0; 
+  color: black;
+}
+
+/* Douglas Squirrel */
+#btn1.active, 
+.btn.active.btn1 { 
+  background-color: #F6D096 !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Western Gray */
+#btn2.active, 
+.btn.active.btn2 { 
+  background-color: #bababa !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Humboldt's Flying Squirrel */
+#btn3.active, 
+.btn.active.btn3 { 
+  background-color: #B1DEA5 !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Fox Squirrel */
+#btn4.active, 
+.btn.active.btn4 { 
+  background-color: #E7A0A0 !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Eastern Gray */
+#btn5.active, 
+.btn.active.btn5 { 
+  background-color: #94BEFC !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* California Ground squirrel */
+#btn6.active, 
+.btn.active.btn6 { 
+  background-color: #bfacd2 !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Nelson's Antelope Squirrel */
+#btn7.active, 
+.btn.active.btn5 { 
+  background-color: #9fd3e5 !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+/* Golden-mantled Squirrel */
+#btn8.active, 
+.btn.active.btn6 { 
+  background-color: #eadd8b !important; 
+  color: black !important; 
+  border-color:  #ffffff;
+  border-width: 3px;
+}
+
+
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(50, 115, 220, 0.25); 
+}
+
+
+
+
+#leafMap {
+  height: 75vh; 
+
+}
+
+#contain {
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  color: #663e05;
+  background-color: #ffffff;  
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: space-between; 
+    width: 100%; /
+  }
+
+  @media (min-width: 992px) { 
+    .navbar-nav {
+      justify-content: space-between; 
+    }
+  }
+
+
+  .navbar .container-fluid {
+      flex-wrap: wrap;
+  }
+
+  /* margin for toggler */
+  .navbar-toggler {
+      margin-left: auto; /* hamburger to end of container*/
+  }
+
+  /* make nav flex container */
+  .navbar-brand, .navbar-collapse {
+      display: flex;
+      align-items: center;
+  }
+
+ 
+  @media (max-width: 991px) {
+    .navbar-brand img {
+      width: 100px; 
+      height: auto;
+    }
+  }
+
+ 
+  .navbar .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  #h1 {
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase !important;
+    letter-spacing: 2px;
+    /* padding:.5rem 0rem; */
+  }
+
+  @media (max-width: 575.98px) {
+    #h1 {
+      font-size: 1rem; 
+      letter-spacing: 1px;
+    }
+  }
+
+  #sqButtons {
+    height: 25vh; 
+    overflow-y: auto; 
+
+    display: block;
+  }
+
+
+
+  .sqList {
+  color: #fff;
+
+  }
+
+.hidden {
+  display: none;
+}
+
+.navbar-nav {
+    width: 100%; 
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        flex-grow: 1; /* Allows the navbar-collapse to take up all available space */
+    }
+}

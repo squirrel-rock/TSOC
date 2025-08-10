@@ -1,0 +1,280 @@
+{
+  "squirrels": [
+    {    
+      "number" : 1,
+      "title": "Tamiascurius douglasii",
+      "type": "Douglas Squirrel",
+      "photo": "js/douglasM1.jpg",
+      "geoJsonUrl" : "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1870_fpu/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+
+        "style": {  
+          "color": "#D18B23",
+          "opacity": 1,
+          "stroke": true,
+          "weight": 2,          
+          "fill": true,
+          "fillOpacity": 0.2,
+          "fillColor": "#FAA90C"
+        },
+    
+      "size": [10, 14],
+      "lat": 38.987469, 
+      "lng": -123.32179,
+      "color": "chestnut",
+      "iconUrl": "douglasIcon2.png",
+      "description": "<p>Douglas Squirrel</p>",
+      
+      "icon": {
+        "iconUrl": "douglasIcon2.png",
+        "shadowUrl": "douglasIcon2Shad.png",
+        "iconSize": [55, 61],
+        "shadowSize": [59, 42],
+        "iconAnchor": [14, 47],
+        "shadowAnchor": [1, 20],
+        "popupAnchor": [1, -48],
+        "className": "douglas-icon"
+      }
+    },
+
+    
+    {
+      "number" : 2,
+      "title": "Scurius griseus",
+      "type": "Western Gray Squirrel",
+      "photo": "WestM.jpg",
+      "geoJsonUrl" : "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1868_fpu/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson", 
+      
+      "style": {
+
+        "color": "#000000",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#000000C"
+      },
+      "size": [18, 24],
+      "lat": 40.373823, 
+      "lng": -123.705057,
+      "color": "silver and slate gray",
+      "description": "<p>Western Gray Squirrel</p>",
+      "icon" : {
+        "iconUrl": "westernGrayIcon.png", 
+        "shadowUrl": "westernGrayIconShad.png",
+        "iconSize": [58, 56],
+        "shadowSize": [60, 30],
+        "iconAnchor": [15, 45],
+        "shadowAnchor": [10, 10],
+        "popupAnchor": [1, -46],
+        "className": "western-icon"
+      }
+    },
+    {
+      "number" : 3,
+      "title": "Glaucomys oregonensis",
+      "type": "Humboldt's Flying Squirrel",
+      "photo": "flyingSquirrelM.jpg",
+      "geoJsonUrl" : "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1871_fpu/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+      
+      "style": {
+
+        "color": "#0C6D04",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#0C6D04"
+      },
+      "size": [8, 10],
+      "lat": 40.935972, 
+      "lng": -123.28915,
+      "color": "light brown",
+      "description": "<p><strong>Humboldt's Flying Squirrel </strong></p>",
+      "icon": {
+        "iconUrl": "flyingIcon2.png",
+        "shadowUrl": "flyingIconShad2.png",
+        "iconSize": [75, 54],
+        "shadowSize": [72, 50],
+        "iconAnchor": [15, 45],
+        "shadowAnchor": [0, 7],
+        "popupAnchor": [1, -46],
+        "className": "flying-icon"
+      }
+    },
+
+    
+    {
+      "number" : 4,
+      "title": "Scurius niger",
+      "type": "Fox Squirrel",
+      "photo": "Sqr-fox-family3M-768.jpg",
+      "geoJsonUrl" : "js/Eastern_Fox_Squirrel_Range_-_CWHR_M078_[ds1869].geojson",
+      
+      "style": {
+
+        "color": "#991F04",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#991F04"
+      },
+      "size": [20, 31],
+      "lat": 37.267379,
+      "lng":  -120.50054,
+      "color": "reddish brown",
+      "description": "<p>Fox Squirrel</p>",
+      "icon": {
+        "iconUrl": "foxy.png",
+        "shadowUrl": "foxyShad.webp",
+        "iconSize": [65, 72],
+        "shadowSize": [70, 48],
+        "iconAnchor": [14, 45],
+        "shadowAnchor": [0, 17],
+        "popupAnchor": [1, -46],
+        "className": "fox-icon"
+      }
+    },
+
+    
+    {
+      "number" : 5,
+      "title": "Scurius carolinensis",
+      "type": "Eastern Gray Squirrel",
+      "photo": "easternGrayM.jpg",
+      "geoJsonUrl" : "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1867_fpu/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+      
+      "style": {
+
+        "color": "#071EE9",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#071EE9"
+      },
+      "size": [16.6, 21.6],
+      "lat": 38.195296,  
+      "lng": -120.979196,
+      "color": "mixed: brown, gray and black",
+      "description": "<p>Eastern Gray</p>",
+      "icon" : {
+        "iconUrl": "EasternSqMarker.png",
+        "shadowUrl": "EasternSqMarker2Shad.png",
+        "iconSize": [55, 60],
+        "shadowSize": [56, 40],
+        "iconAnchor": [15, 45],
+        "shadowAnchor": [0,17],
+        "popupAnchor": [1, -46],
+        "className": "eastern-icon"
+      }
+    },
+
+    
+    {
+      "number" : 6,
+      "title": "Otospermophilus beecheyi",
+      "type": "Ground Squirrel",
+      "photo": "GroundSquirrelM.jpg",
+      "geoJsonUrl" : "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1864_fpu/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+      
+      "style": {
+
+        "color": "#5E2771",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#5E2771"
+      },
+      "size": [16, 18],
+      "lat": 34.650402, 
+      "lng": -120.082061,
+      "color": "speckled tan",
+      "description": "<p>Ground Squirrel</p>",
+      "icon": {
+        "iconUrl": "groundSQicon.png",
+        "shadowUrl": "groundSQiconShad-119-48.png",
+        "iconSize": [95, 43],
+        "shadowSize": [99, 37],
+        "iconAnchor": [14, 12],
+        "shadowAnchor": [8, 3],
+        "popupAnchor": [1, -46],
+        "className": "ground-icon"
+      }
+    },
+    {
+      "number" : 7,
+      "title": "Ammospermophilus nelsoni",
+      "type": "Nelson's Antelope Squirrel",
+      "photo": "antelopeNelsonsGround.png",
+      "geoJsonUrl" : "js/NelsonsAntelopeGroundSquirrel_ds1860.geojson",
+
+      "style": {
+
+        "color": "#6CAAB8",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#6CAAB8"
+      },
+      "size": [16, 18],
+      "lat": 35.901801,
+      "lng":  -120.41597,
+      "color": "tan with one white stripe on each side",
+      "description": "<p>Antelope Squirrel</p>",
+      "icon": {
+        "iconUrl": "antelopeNelsonsGround.png",
+        "shadowUrl": "antelopeNelsonsGroundShad.png",
+        "iconSize": [45, 36],
+        "shadowSize": [52, 25],
+        "iconAnchor": [22, 12],
+        "shadowAnchor": [12, 3],
+        "popupAnchor": [1, -59],
+        "className": "antelope-icon"
+      }
+    },
+    {
+      "number" : 8,
+      "title": "Callospermophilus lateralis",
+      "type": "Golden-mantled Ground Squirrel",
+      "photo": "goldMantle.png",
+      "geoJsonUrl" : "js/GoldenMantleSquirrel_ds1866.geojson",
+
+      "style": {
+
+        "color": "#c2a905",
+        "opacity": 1,
+        "stroke": true,
+        "weight": 2,          
+        "fill": true,
+        "fillOpacity": 0.2,
+        "fillColor": "#c2a905"
+      },
+      "size": [16, 18],
+      "lat": 40.811395, 
+      "lng": -121.235283,
+      "color": "greyish-brown, two white stripes edged with black stripes",
+      "description": "<p>Golden-mantled Squirrel</p>",
+      "icon": {
+        "iconUrl": "goldMantle.png",
+        "shadowUrl": "goldMantleShad.png",
+        "iconSize": [80, 32],
+        "shadowSize": [82, 24],
+        "iconAnchor": [14, 12],
+        "shadowAnchor": [8, 3],
+        "popupAnchor": [1, -46],
+        "className": "golden-icon"
+      }
+    }
+  ]
+}
+
+

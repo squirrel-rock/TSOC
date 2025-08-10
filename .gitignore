@@ -1,0 +1,16 @@
+# Ignore HTML files with a dash in the filename
+*-*.html
+
+# Ignore specific folders
+_RangeMaps-week9fix/
+uneditedPics/
+"Tree Squirrels ofCalifornia_files"/
+"TreeSquirrelsofCalifornia_files"/
+SaltFlats/
+masterimageFiles/
+SquirrelSpeciesofCalifornia-0ld_files/
+zhtml-old-july21/
+img-sqr-copy/
+
+# Ignore any folder containing 'midterm50B'
+*midterm50B*/

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/contactForm.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Source+Serif+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="contact">
+  <!-- //////// header  //////// -->
+
+
+
+<header class="topnav-header">
+  <div class="nav-top-row spaceboxDark">
+    <div class="nav-logo">
+      <img src="../logo/TSOClogo.png" alt="TSOC logo">
+    </div>
+    <div class="nav-row nav-row-primary">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    </div>
+    
+  <div class="nav-row nav-row-secondary">
+      <a href="identification.html">ID Guide</a>
+      <a href="species.html">Species Info</a>
+    <a href="../CS50C_Week9/inLeaflet.html">Range Maps</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+
+<!--2 squirrel outlines-->
+
+   <p class="twoSquirtle">
+      <img src="../graphics/Sqrl-outlineFront.png" alt="squirrel line drawing" width="200">
+      <img src="../graphics/Sqrl-outlineSide.png" alt="squirrel line drawing" width="135">
+    </p>
+  
+</header>
+
+  <main class="main-wrapper clearfix">
+    <!-- MAIN CONTENT -->
+   
+    <section class="main-content">
+      <div class="fullwidth">
+  <h1 >Contact Us</h1>
+  </div>
+     <h3 style="margin-top:-40px; color:#b3df9f;">... we'd love to hear from you!</h3>
+      <h4 class="center " style="color:#f1c27c;"> 2025 Director: Kelly Durkin</h4>
+
+            
+<!-- Contact Form with reCaprcha v2 validation added-->
+      <hr><br>
+      <div class="center fullwidth">
+      <img src="../graphics/treeSquirrelLogo2.png" style="width:80%; border-radius:8px;" alt="TSOC logo - a squirrel silhouette on brown background">
+      </div>
+      <form
+  action="https://formspree.io/f/xqaldqkv"
+  method="POST"
+  class="contact-form"
+>
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your Email: (We look forward to communicating, but it's not required unless you want us to respond.)</label>
+  <input type="email" id="email" name="email">
+
+  <label for="topic">Is there a squirrel topic you’d like to see added or explored more thoroughly?</label>
+  <textarea id="topic" name="topic" rows="4" placeholder="Or other comments about the site?"></textarea>
+
+<input type="text" name="ref_code" class="squirrel" autocomplete="off" tabindex="-1" aria-hidden="true">
+<br>
+<hr class="branchLeaf-divider">
+
+<!-- FAVORITE SQUIRREL? -->
+  <fieldset>
+    <legend>Which is your favorite tree squirrel?</legend>
+    <label><input type="radio" name="favorite_squirrel" value="Douglas Squirrel (Tamiasciurus douglasii)"> Douglas Squirrel <em>(T. douglasii)</em></label><br>
+    <label><input type="radio" name="favorite_squirrel" value="Western Gray Squirrel (Sciurus griseus)"> Western Gray <em>(S. griseus)</em></label><br>
+    <label><input type="radio" name="favorite_squirrel" value="Eastern Gray Squirrel (Sciurus carolinensis)"> Eastern Gray <em>(S. carolinensis)</em></label><br>
+    <label><input type="radio" name="favorite_squirrel" value="Fox Squirrel (Sciurus niger)"> Fox Squirrel <em>(S. niger)</em></label>
+  </fieldset>
+<hr>
+  <fieldset>
+    <legend>Would you like to see more or fewer squirrels in your environment?</legend>
+    <label><input type="radio" name="squirrel_opinion" value="More squirrels"> More squirrels!</label><br>
+    <label><input type="radio" name="squirrel_opinion" value="Fewer squirrels"> Fewer squirrels, please.</label>
+  </fieldset>
+
+  <!-- reCAPTCHA v2 checkbox -->
+  <div class="g-recaptcha" data-sitekey="6LedZpgrAAAAAG7Jcd8UQ5Fra0niGldAMghWLs7P"></div>
+
+  <hr>
+<div >
+  <p class="center"><button type="submit">Send</button></p>
+  </div>
+</form>
+     
+
+      <hr class="shorty"><br>
+
+      <div class="three-across acorn" style="text-align: center;">
+        <img src="../graphics/acorn-brown200x200.png" alt="brown acorn graphic">
+        &nbsp;&nbsp;&nbsp;
+        <img src="../graphics/acorn-brown200x200.png" alt="brown acorn graphic">
+        &nbsp;&nbsp;&nbsp;
+        <img src="../graphics/acorn-brown200x200.png" alt="brown acorn graphic">
+      </div>
+
+      <section>
+        <h2>Purpose</h2>
+        <h3>Our Educational Focus (in a nutshell)</h3>
+        <ul>
+          <li>Helping you identify California’s four primary tree squirrel species</li>
+          <li>Explaining the difference between native and introduced squirrels</li>
+          <li>Offering practical tips for peaceful coexistence</li>
+          <li>Providing up-to-date information on laws, habitats, and links to other resources</li>
+        </ul>
+      </section>
+
+
+
+<br>
+<hr>
+
+      <p class="info-box left">
+        This website was built as a class assignment for the Summer 2025 semester of CS50A at Santa Rosa Junior College, taught by Beaury Foshée. “Tree Squirrels of California” is a fictitious organization. Nonetheless, I have endeavored to be as accurate as possible with all of the information about squirrels, news articles, and hunting information.
+      </p>
+
+      <hr><br>
+
+   
+    </section>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <section class="forest-background-up">
+    <h2>Species Snapshots</h2>
+    <div class="squirrel-stack center">
+      <div class="glass-frame">
+        <a href="species.html#douglas">
+          <img src="../photos/douglas/douglasMushroom600.jpg" alt="Douglas squirrel holding a mushroom">
+          <p class="squirrel-name">Douglas</p>
+        </a>
+      </div>
+      <div class="glass-frame">
+        <a href="species.html#western">
+          <img src="../photos/western/westernGray-muscles.jpg" alt="Western gray on redwood trunk">
+          <p class="squirrel-name">Western</p>
+        </a>
+      </div>
+      <div class="glass-frame">
+        <a href="species.html#eastern">
+          <img src="../photos/eastern/EastGray_TopDown-1200.jpg" alt="Eastern gray looking down">
+          <p class="squirrel-name">Eastern</p>
+        </a>
+      </div>
+      <div class="glass-frame">
+        <a href="species.html#fox">
+          <img src="../photos/fox/fox-sit-up-unsplash.jpg" alt="Fox squirrel on tree">
+          <p class="squirrel-name">Fox</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    </aside>
+    
+  </main>
+<footer class="allsite-footer">
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="identification.html">Squirrel ID</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <p class="footer-credit">Website designed by Kelly Durkin &bull; &copy; 2025</p>
+</footer>
+</body>
+</html>
