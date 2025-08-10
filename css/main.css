@@ -703,7 +703,7 @@ body.identification p {
   background-size: contain;
  max-width:322px;  
  height:120px;  
-  margin: 18px auto 10px auto ;
+  margin: 32px auto 10px auto ;
 }
 
 .squirrel-dividerPeanut{
@@ -712,7 +712,16 @@ body.identification p {
   background-size: contain;
  max-width:322px;  
  height:120px;  
-  margin: 18px auto 10px auto ;
+  margin: 32px auto 10px auto ;
+}
+
+.squirrel-dividerEastPeanut{
+  border: none;
+  background: url('../graphics/SVG/squirrel-dividerEastPeanut.svg') center center no-repeat;
+  background-size: contain;
+ max-width:322px;  
+ height:120px;  
+  margin: 32px auto 10px auto ;
 }
 
 .squirrel-dividerWorry{
@@ -721,7 +730,7 @@ body.identification p {
   background-size: contain;
  max-width:322px;  
  height:98px;  
-  margin: 30px auto ;
+  margin: 32px auto ;
 }
 
 .squirrel-dividerWorryAcorn{
@@ -730,7 +739,7 @@ body.identification p {
   background-size: contain;
  max-width:322px;  
  height:124px;  
-  margin: 30px auto ;
+  margin: 32px auto ;
 }
 
 .acornOrange {
