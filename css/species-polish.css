@@ -1,0 +1,131 @@
+/* species-polish.css  */
+body#species-page * { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+/* page frame */
+body#species-page {
+  color: #f1e9db;                 /* light text on dark bg */
+  background: #22180f;            /* very dark warm brown */
+}
+
+body#species-page main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Headings*/
+body#species-page h1 { font-size: 36px; line-height: 42px; margin: 8px 0 16px; }
+body#species-page h2 { font-size: 28px; line-height: 34px; margin: 24px 0 12px; color: #2c6e3f; } 
+body#species-page h3 { font-size: 22px; line-height: 28px; margin: 18px 0 8px; color: #d9c089; }
+body#species-page p  { font-size: 16px; line-height: 24px; margin: 12px 0; }
+
+/* “Info card”  for species blocks */
+body#species-page .species-card {
+  background: #f8f4ea;            /* light interior card */
+  color: #2a210c;                 /* dark text inside card */
+  border: 2px solid #3f2805;    
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  margin: 16px 0;
+}
+
+/* Responsive grid for cards */
+body#species-page .species-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+body#species-page .species-grid .species-card {
+  flex: 1 1 340px;    /* 3 on desktop, 2 on tablet, 1 on phone */
+  min-width: 280px;
+}
+
+/* Image treatment */
+body#species-page .species-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #d6c6a6;
+  margin-bottom: 12px;
+}
+
+/* Little label chips  */
+body#species-page .chip {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #3f2805;
+  background: #e8d3a4;            /* warm tan */
+  color: #2a210c;
+  margin-right: 8px;
+}
+
+/* Accent link/button */
+body#species-page .learn-more {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #d87a2e;            /* bright warm orange for contrast */
+  color: #1b120a;
+  text-decoration: none;
+  border: 2px solid #3f2805;
+}
+body#species-page .learn-more:hover { filter: brightness(1.05); }
+
+/* Tables  */
+body#species-page .table-wrap { overflow-x: auto; }
+body#species-page table { width: 100%; border-collapse: collapse; }
+body#species-page th, body#species-page td { border-bottom: 1px solid #ccb893; padding: 8px; }
+
+/* Soft separators  */
+body#species-page .section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #6b4a1f, transparent);
+  margin: 20px 0;
+}
+
+
+body#species-page .species-banner {
+  --gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+/* behave like a block */
+body#species-page .species-banner .glass-frame2 {
+  display: block;
+  /* Desktop: force 4 columns (with gaps) */
+  flex: 0 1 calc((100% - (3 * var(--gap))) / 4);
+  min-width: 220px;      
+}
+
+/* Images fill their card */
+/* Default: 4 columns (desktop) */
+body#species-page .species-banner .glass-frame2 {
+  flex: 0 1 calc((100% - (3 * var(--gap))) / 4);
+  min-width: 220px;
+}
+
+
+@media (max-width: 928px) {
+  body#species-page .species-banner .glass-frame2 {
+    flex: 0 1 calc((100% - var(--gap)) / 2);
+    min-width: 220px;
+  }
+}
+
+/* 1 column  */
+@media (max-width: 456px) {
+  body#species-page .species-banner .glass-frame2 {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+body#species-page { outline: 3px solid magenta !important; }
