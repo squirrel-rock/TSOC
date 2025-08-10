@@ -1,4 +1,3 @@
-/* ===== species.html banner */
 body#species-page .species-banner {
   --gap: 16px;
   display: flex !important;
@@ -7,125 +6,29 @@ body#species-page .species-banner {
   align-items: stretch;
   justify-content: center;
 }
-
 body#species-page .species-banner .glass-frame2 {
-
   box-sizing: border-box;
   display: block !important;
   float: none !important;
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
-
-  /* DESKTOP: exactly 4 columns */
   flex: 0 0 calc((100% - (3 * var(--gap))) / 4) !important;
   max-width: calc((100% - (3 * var(--gap))) / 4) !important;
   min-width: 220px;
 }
-
 body#species-page .species-banner .glass-frame2 img {
   display: block;
   width: 100%;
   height: auto;
 }
-
-
-body#species-page .learn-more:hover   { filter: brightness(1.05); }
-body#species-page .learn-more:focus-visible {
-  outline: 3px solid #ffe8b5; outline-offset: 2px;
-}
-
-/* mobile */
-@media (max-width: 900px) {
-  body#species-page .char-sign { font-size: 20px; line-height: 24px; }
-  body#species-page .species-section { margin: 22px auto 34px; }
-}
-
-/* National Park–style heading strip */
-
-body#species-page .char-sign {
-  font-family: 'National Park', Arial, sans-serif;
-  font-weight: 500;
-  font-size: 36px;    
-  line-height: 40px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #f8f4ea;       /* light tan text */
-  background: #3f2805; 
-  padding: 10px 22px;
-  display: inline-block;
-  border: none;     
-  border-radius: 0;    
-}
-body#species-page .char-sign-row { text-align: center; margin: 20px 0 12px; }
-body#species-page .char-sign-row {
-  text-align: center;
-  margin: 20px 0 12px;
-}
-/* Outlined Learn More button */
-body#species-page .learn-more {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 14px;
-  border-radius: 10px;
-  background: transparent;
-  color: #d87a2e;         
-  text-decoration: none;
-  border: 2px solid #d87a2e;      
-  font-weight: bold;
-}
-
-body#species-page .learn-more:hover {
-  background: #d87a2e;           
-  color: #1b120a;             
-}
-
-body#species-page .learn-more:focus-visible {
-  outline: 3px solid #ffe8b5;
-  outline-offset: 2px;
-}
-
-
-/* Polished blockquote styling for main content */
-body.species blockquote {
-  font-family: 'National Park', serif;
-  font-size: 22px;
-  font-style: italic;
-  line-height: 1.6;
-  color: #f3e7c9; /* light warm text */
-  background: linear-gradient(145deg, #2a1d0d, #3b2a15); /* warm dark fade */
-  border-left: 6px solid #d37e0f; /* thicker gold/orange accent */
-  padding: 20px 28px;
-  margin: 32px auto;
-  max-width: 800px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  border-radius: 8px;
-}
-
-body.species blockquote cite {
-  display: block;
-  font-size: 16px;
-  margin-top: 12px;
-  color: #ffd972; /* lighter gold for author */
-  text-align: right;
-}
-
-
-
-
-
-
-
-/* TABLET */
-@media (max-width: 928px) { /* 4×220 + 3×16 = 928 */
+@media (max-width: 928px) {
   body#species-page .species-banner .glass-frame2 {
     flex: 0 0 calc((100% - var(--gap)) / 2) !important;
     max-width: calc((100% - var(--gap)) / 2) !important;
   }
 }
-
-/* PHONE: 1 column */
-@media (max-width: 456px) { /* 2×220 + 1×16 = 456 */
+@media (max-width: 456px) {
   body#species-page .species-banner .glass-frame2 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
@@ -133,278 +36,43 @@ body.species blockquote cite {
   }
 }
 
-/* ----- */
-
-/* ===== species.html – full‑bleed image ===== */
-body#species-page .species-section{
-  --gutter: 24px;                 /* left/right padding for text */
-  --space-1: 12px;                /* small */
-  --space-2: 20px;                /* medium */
-  --space-3: 28px;                /* large */
-  --space-4: 40px;                /* x‑large */
-  margin: var(--space-4) auto;    /* space between species sections */
-  padding: 0;                     /* the text blocks  pad themselves */
-}
-
-
-body#species-page .species-section > :not(img.fullwidth){
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-}
-
-/* Headings & intro paragraph rhythm */
-body#species-page .species-section .section-head{
-  margin: var(--space-2) auto var(--space-1);
-}
-body#species-page .species-section h3.light{
-  margin: 0 auto var(--space-2);
-}
-body#species-page .species-section p.light{
-  max-width: 900px;
-  margin: 0 auto var(--space-3);
-}
-
-/* Full‑bleed hero image  */
-body#species-page img.fullwidth{
-  display: block;
-  width: 100vw;          
-  max-width: none;      
-  
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
-
-body#species-page .species-section blockquote{
-  margin: var(--space-3) auto;
-}
-
-
-body#species-page .species-section .list-block{
-  max-width: 900px;
-  margin: var(--space-3) auto var(--space-2);
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
-}
-
-
-body#species-page .species-section p.center .learn-more{
-  margin-top: var(--space-2);
-}
-body#species-page .species-section p.center{
-  margin: var(--space-2) auto var(--space-4);
-}
-
-/* Mobile  */
-@media (max-width: 900px){
-  body#species-page .species-section{ --gutter: 16px; }
-  body#species-page .species-section p.light{ font-size: 18px; }
-  body#species-page img.fullwidth{ margin-top: var(--space-2); margin-bottom: var(--space-2); }
-}
-
-/* ===== species.html — full‑width section bars + spacing ===== */
-
-
-body#species-page .species-section > :not(img.fullwidth):not(h2) {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-
-body#species-page .species-section > h2 {
-  display: block;
-  width: 100vw;               
-  max-width: none;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: 40px;
-  margin-bottom: 16px;
-  padding: 20px 24px;           /* nice vertical padding */
-  text-align: center;
-  text-transform: uppercase;
+body#species-page .char-sign {
+  font-family: 'National Park', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
   letter-spacing: 1px;
-  font-family: 'National Park', Arial, sans-serif;
-  line-height: 1.2;
-}
-
-/* Color themes for native / non‑native */
-body#species-page .species-section > h2.native {
-  background: #1e4e03;        
-  font-size: 30px;
-}
-
-body#species-page .species-section > h2.invader {
-  background: #7a2b0a;       
-  color: #ffe7b2;
-  font-size: 34px;          
-}
-
-body#species-page .species-section h3.light {
-  margin-top: 8px;
-  margin-bottom: 12px;
-}
-body#species-page .species-section p.light {
-  max-width: 900px;
-  margin: 0 auto 24px;
-}
-
-
-body#species-page img.fullwidth {
-  display: block;
-  width: 100vw;
-  max-width: none;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-
-body#species-page #invader-info .info-card h3 {
-  font-family: 'National Park', Arial, sans-serif;
-  font-size: 44px !important;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-body#species-page #invader-info .info-box-p {
-  max-width: 900px;
-  margin: 12px auto 0;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-size: 22px;
-  line-height: 1.7;
-}
-
-
-body#species-page #eastern blockquote {
-  margin: 20px auto;
-  max-width: 900px;
-}
-
-
-body#species-page .allsite-footer,
-body#species-page .allsite-footer .footer-nav ul,
-body#species-page .allsite-footer .footer-credit {
-  text-align: center;
-}
-body#species-page .allsite-footer .footer-nav li {
+  color: #f8f4ea;
+  background: #3f2805;
+  padding: 10px 22px;
   display: inline-block;
-  margin: 0 12px;
+  border: none;
+  border-radius: 0;
 }
-
-/* Mobile */
-@media (max-width: 900px) {
-  body#species-page .species-section > h2.native { font-size: 26px; }
-  body#species-page .species-section > h2.invader { font-size: 30px; }
-}
-
-
-body#species-page .species-section h2.native,
-body#species-page .species-section h2.invader {
-  display: block;
-  width: 100vw;         
-  max-width: none;
-  margin-left: calc(50% - 50vw);  
-  margin-right: calc(50% - 50vw);
-  margin-top: 40px;
-  margin-bottom: 16px;
-  padding: 24px 24px;          
+body#species-page .char-sign-row {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'National Park', Arial, sans-serif;
-  line-height: 1.2;
+  margin: 20px 0 12px;
 }
 
-/* Color themes + sizes */
-body#species-page .species-section h2.native {
-  background: #1e4e03;   /* deep green */
-  color: #f7f2e4;
-  font-size: 30px;
-}
-body#species-page .species-section h2.invader {
-  background: #7a2b0a;  
-  color: #ffe7b2;
-  font-size: 34px;    
-}
-
-
-body#species-page .species-section > :not(img.fullwidth) {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-/* Full-browser-width H2 bars */
-body#species-page .species-section h2.native,
-body#species-page .species-section h2.invader {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); /* centeinmgr the 100vw element on the page */
-  width: 100vw;
-  max-width: 100vw;
-
-  margin: 40px 0 16px;
-  padding: 24px 24px;
-
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'National Park', Arial, sans-serif;
-  line-height: 1.2;
-}
-
-/* Colors + sizes */
-body#species-page .species-section h2.native {
-  background: #1e4e03;
-  color: #f7f2e4;
-  font-size: 32px;
-}
-body#species-page .species-section h2.invader {
-  background: #7a2b0a;
-  color: #ffe7b2;
-  font-size: 36px;  
-}
-
-
-html, body { overflow-x: clip; }
-
-body#species-page .footer-light {
-  text-align: center;
-}
-
-body#species-page .footer-light ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px 18px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: none;
-  width: 100%;
-}
-
-body#species-page .footer-light li {
-  margin: 0;
-  text-align: center;
-}
-
-body#species-page .footer-light a {
+body#species-page .learn-more {
   display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: #d87a2e;
+  text-decoration: none;
+  border: 2px solid #d87a2e;
+  font-weight: bold;
+}
+body#species-page .learn-more:hover {
+  background: #d87a2e;
+  color: #1b120a;
+}
+body#species-page .learn-more:focus-visible {
+  outline: 3px solid #ffe8b5;
+  outline-offset: 2px;
 }
 
 body#species-page blockquote {
@@ -436,6 +104,127 @@ body#species-page .block-invader {
   color: #ffecd0;
   border-left-color: #d37e0f;
 }
+
+body#species-page .species-section {
+  --gutter: 24px;
+  --space-1: 12px;
+  --space-2: 20px;
+  --space-3: 28px;
+  --space-4: 40px;
+  margin: var(--space-4) auto;
+  padding: 0;
+}
+body#species-page .species-section > :not(img.fullwidth) {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+body#species-page .species-section .section-head { margin: var(--space-2) auto var(--space-1); }
+body#species-page .species-section h3.light { margin: 0 auto var(--space-2); }
+body#species-page .species-section p.light { max-width: 900px; margin: 0 auto var(--space-3); }
+body#species-page .species-section blockquote { margin: var(--space-3) auto; }
+body#species-page .species-section .list-block {
+  max-width: 900px;
+  margin: var(--space-3) auto var(--space-2);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+body#species-page .species-section p.center .learn-more { margin-top: var(--space-2); }
+body#species-page .species-section p.center { margin: var(--space-2) auto var(--space-4); }
+
+body#species-page img.fullwidth {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+body#species-page .species-section h2.native,
+body#species-page .species-section h2.invader {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100vw;
+  margin: 40px 0 16px;
+  padding: 24px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'National Park', Arial, sans-serif;
+  line-height: 1.2;
+}
+body#species-page .species-section h2.native {
+  background: #1e4e03;
+  color: #f7f2e4;
+  font-size: 32px;
+}
+body#species-page .species-section h2.invader {
+  background: #7a2b0a;
+  color: #ffe7b2;
+  font-size: 36px;
+}
+
+body#species-page #invader-info .info-card h3 {
+  font-family: 'National Park', Arial, sans-serif;
+  font-size: 44px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+body#species-page #invader-info .info-box-p {
+  max-width: 900px;
+  margin: 12px auto 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+body#species-page #eastern blockquote {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+body#species-page .allsite-footer,
+body#species-page .allsite-footer .footer-nav ul,
+body#species-page .allsite-footer .footer-credit {
+  text-align: center;
+}
+body#species-page .allsite-footer .footer-nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+body#species-page .footer-light { text-align: center; }
+body#species-page .footer-light ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: none;
+  width: 100%;
+}
+body#species-page .footer-light li { margin: 0; text-align: center; }
+body#species-page .footer-light a { display: inline-block; }
+
+html, body { overflow-x: clip; }
+
 @media (max-width: 900px) {
+  body#species-page .char-sign { font-size: 20px; line-height: 24px; }
+  body#species-page .species-section { --gutter: 16px; }
+  body#species-page .species-section p.light { font-size: 18px; }
+  body#species-page img.fullwidth { margin-top: 20px; margin-bottom: 20px; }
+  body#species-page .species-section h2.native { font-size: 26px; }
+  body#species-page .species-section h2.invader { font-size: 30px; }
   body#species-page blockquote { font-size: 22px; line-height: 1.6; padding: 18px 22px; }
 }
