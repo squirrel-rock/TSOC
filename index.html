@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    
+     <!-- Bootstrap -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+
     <title>Tree Squirrels of California</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sidebar.css">
 <link rel="stylesheet" href="css/table.css">
+<link rel="stylesheet" href="css/id.css">
 
 
 
@@ -19,6 +22,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Source+Serif+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+ 
+<style>
+
+  hr { opacity: 1 !important; }
+</style>
 
 </head>
 
@@ -39,7 +48,7 @@
       <img src="logo/TSOClogo.png" alt="TSOC logo">
     </div>
     <div class="nav-row nav-row-primary">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="html/about.html">About</a>
       <a href="html/contact.html">Contact</a>
     </div>
@@ -47,6 +56,7 @@
 
   <div class="nav-row nav-row-secondary">
     <a href="html/identification.html">ID Guide</a>
+       <a href="html/identification-full.html" >Compare Chart</a>
     <a href="html/species.html">Species Info</a>
     <a href="CS50C_Week9/inLeaflet.html">Range Maps</a>
     <a href="html/faq.html">FAQ</a>
@@ -126,14 +136,17 @@
 <h3>The Squirrels Are Here to Stay</h3>
 <h4>The Cute Factor: Public sympathy complicates management of charismatic invasive species. </h4>
 
-<p class="three-across center">
-  <img class="western perching" src="photos/compare/perch/western-perch.jpg" alt="Western Gray squirrel perching">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img class="eastern perching" src="photos/compare/perch/eastern-perch.jpg" alt="Eastern Gray squirrel perching">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img class="fox perching" src="photos/fox/fox-perch.jpg" alt="Fox squirrel perching">
-</p>
+
+
+<section class="stay-trio-bs container-fluid">
+  <div class="row row-cols-3 g-3 justify-content-center">
+    <div class="col"><img class="w-100 d-block" src="photos/compare/perch/western-perch.jpg" alt="Western Gray squirrel perching"></div>
+    <div class="col"><img class="w-100 d-block" src="photos/compare/perch/eastern-perch.jpg" alt="Eastern Gray squirrel perching"></div>
+    <div class="col"><img class="w-100 d-block" src="photos/fox/fox-perch.jpg" alt="Fox squirrel perching"></div>
+  </div>
+</section>
 <p class="ident center">Western Gray, Eastern Gray and Fox Squirrel</p>
+
 
 <p>Squirrels' playful antics are endearing. That's why they were introduced in the first place. (see sidebar)</p>
 
@@ -304,9 +317,21 @@ The urbanization of Eastern Gray squirrels was a national movement that had begu
 <hr class="branch2-divider">
 <h3 style="color:rgb(148, 8, 8);">Knowing the difference matters.</h3>
 </div>
+<hr class="acornOrange">
 
 
-</section><!-- end of 'main-content class'-->
+
+
+  <div class="my-4 mx-auto border text-center">
+    <h4 class="my-4"  style="color:rgb(222, 208, 169);">Curious what squirrel matches your personality?</h4>
+  <a href="CS50C_Week9/Squirrel-Personality-Quiz.html" class="np-cta">
+    What Kind of Squirrel Are You?
+  </a>
+  <hr class="squirrel-dividerLookUp my-4">
+     
+</div>
+
+</section><!-- end of main-content class-->
       <!-- SIDEBAR -->
  <aside class="sidebar">
 
@@ -344,7 +369,7 @@ The urbanization of Eastern Gray squirrels was a national movement that had begu
   <hr class="squirrel-RunLeft">
 
 
-  <!-- ARTICLE BLOCK -->
+  <!-- ARTICLE  -->
   <section class="sidebar-card">
     <h3 class="informative-heading center">The Urban Pet</h3>
     <h4 class="informative-subheading">A Cultural Shift in American Cities</h4>
@@ -427,7 +452,7 @@ The urbanization of Eastern Gray squirrels was a national movement that had begu
       <cite>Etienne Benson, <em>Journal of American History</em></cite>
     </blockquote>
     <br>
-    <hr class="squirrel-dividerRunLeft">
+  
 <br>
 <div class="sidebar-text-block">
   <p>Then the tide turned. Frederick Law Olmsted began a new era of park design in the U.S., shaping places where trees could thrive—and squirrels could live without handouts. In the early 1900s, his work helped remake parks into wooded retreats, not just for people, but for animals too.</p>
@@ -440,19 +465,12 @@ The urbanization of Eastern Gray squirrels was a national movement that had begu
   <nav class="nav-links sidebar-card">
     <h2 class="dark-heading">Explore More</h2>
 
-    <h3 class="nav-heading">T.S.O.C.</h3>
-    <ul>
-      <li><a class="text-light" href="html/about.html"><strong>About TSOC</strong></a></li>
-      <li><a class="text-light" href="html/contact.html"><strong>Contact Us</strong></a></li>
-      <li><a class="text-light" href="html/faq.html"><strong>Squirrel FAQ</strong></a></li>
-    </ul>
-
-    <h3 class="nav-heading">Resources</h3>
     <ul>
       <li><a class="text-light" href="html/identification.html"><strong>Species Identification Guide</strong></a></li>
+        <li><a class="text-light" href="html/identification-full.html"><strong>Tree Squirrel Comparison Chart</strong>  </a></li>
       <li><a class="text-light" href="html/species.html"><strong>Species Biographical Info</strong></a></li>
-      <li><a class="text-light" href="../CS50C_Week9/inLeaflet.html" target="_blank"><strong>Squirrel Evolution</strong></a></li>
-      <li><a class="text-light" href="../html/squirrel-evolution.html"><strong>Squirrel Evolution</strong></a></li>
+      <li><a class="text-light" href="CS50C_Week9/inLeaflet.html" target="_blank"><strong>Habitat Range Maps</strong></a></li>
+      <li><a class="text-light" href="html/squirrel-evolution.html"><strong>Squirrel Evolution</strong></a></li>
     </ul>
   </nav>
 

@@ -864,47 +864,29 @@ text-align: center;
 
 
       /* ---- FLOAT STYLING. ---- */
-      .float-wrapper {
-  overflow: hidden; 
+.center {
+  text-align: center !important;
+  margin: 24px auto;
+}
+
+.float-wrapper,
+.float-text,
+.audit-text {
+  overflow: hidden;
 }
 
 .float-thumb {
   float: left;
   width: 200px;
-  border: 2px solid #7A463A; 
+  border: 2px solid #7A463A;
   margin: 0 20px 10px 0;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .float-thumb:hover {
   transform: scale(0.96);
-  border-color: #3d8035; /* green on hover */
+  border-color: #3d8035;
   cursor: pointer;
-}
-
-
-
-/* CAPTION LINE UNDER PHOTOS */
-.ident {
-   
-    text-align:center;
-    font-size:14px;
-    color:rgb(95, 2, 2); 
-    margin-top:-24px;
-}
-
-
-.ident {
-  font-size: 18px;
-  color: #5f0202;
-  text-align: center;
-  margin-top: 4px;
-  line-height: 1.4;
-}
-
-
-.float-text {
-  overflow: hidden;
 }
 
 .float-text p {
@@ -918,13 +900,6 @@ text-align: center;
   margin-right: 20px;
 }
 
-
-/* --- Thumbnail col for Misidentification section --- */
-
-
-
-
-/* thumbnail column floated left */
 .float-thumb-col {
   float: left;
   width: 200px;
@@ -943,7 +918,6 @@ text-align: center;
   transform: scale(1.03);
 }
 
-/* FLOATING COLUMNS FOR THUMBNAILS */
 .three-floats {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -973,19 +947,12 @@ text-align: center;
   color: #4D3C36;
 }
 
-/* CLEARFIX -  containing the float */
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* content next to float */
-.audit-text {
-  overflow: hidden;
-}
-
-/*  mobile */
 @media screen and (max-width: 768px) {
   .float-thumb-col {
     float: none;
@@ -1000,6 +967,11 @@ text-align: center;
     max-width: 300px;
   }
 }
+
+
+/* --- Thumbnail col for Misidentification section --- */
+
+
 
 /*. //////// references FOOTER ///////////  */
 
@@ -1028,15 +1000,6 @@ text-align: center;
   color: #7A463A;
 }
 
-.qr-code-block {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.qr-code-block p {
-  margin-top: 10px;
-  font-size: 18px;
-}
 /* //////////////////////////// */
 
 
@@ -1229,7 +1192,7 @@ h6.light-heading {
   font-weight: 600;
 }
 
-/* === sidebar -                   NEWSPAPER COLUMN look === */
+/* === sidebar -  news column look === */
 .sidebar-card .sidebar-text-block p{
   background-color: #f7f2e4;
   color: #2d2d2b !important;
@@ -1560,4 +1523,212 @@ body.contact h1{
   line-height: 1.1;
   word-break: break-word;
   hyphens: auto;
+}
+
+.trio-wrap { max-width: 1400px; margin: 12px auto 0; }
+.trio-img { display: block; width: 100%; height: auto;  }
+
+.homepage-footer-cta {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 40px;
+}
+
+.np-cta {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 28px;
+  color: var(--np-text, #f3efdf);
+  background: var(--np-deep, #0f3b20);
+  border: 4px solid var(--np-frame, #2b532f);
+  border-radius: 12px;
+  box-shadow: inset 0 6px 18px rgba(0,0,0,.25), 0 2px 0 #1e3a21;
+  transition: transform .08s ease, filter .15s ease;
+  text-align: center;
+}
+
+.np-cta::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 2px solid var(--np-inset, #5a8a5f);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.np-cta:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.np-cta:active {
+  transform: translateY(0);
+}
+
+.np-cta:focus-visible {
+  outline: 3px solid #ff9c2f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .np-cta {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .np-cta {
+    font-size: 20px;
+    padding: 18px 34px;
+  }
+}
+
+.contactus {
+padding:30px;
+max-width: 90%;
+  border:1px solid rgb(240, 150, 39);
+  border-radius:8px;
+  margin-top:30px;
+}
+
+
+.border {
+  text-align: center;
+padding:30px;
+max-width: 70%;
+  border:1px solid rgb(240, 150, 39) !important;
+  border-radius:8px;
+  margin-top:30px;
+}
+
+
+/*.  BUTTONS FOR RANGE MAP AND QUIZ. */
+.np-cta { 
+  position: relative; 
+}
+
+.np-cta::before {
+  position: absolute; 
+  inset: 6px;
+  border: 2px solid var(--np-inset, #5a8a5f);
+  border-radius: 8px;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.cq-scope {
+  container-type: inline-size;
+}
+
+
+.content-cq {
+  container-type: inline-size;
+}
+
+.stay-trio-bs {
+  max-width: 1300px;
+  margin: 12px auto;
+  padding: 0 12px;
+}
+
+/* micro-utilities (Bootstrap-free) */
+.u-center {
+  text-align: center;
+}
+
+.u-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.u-my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.u-border {
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+
+.cta-wrap {
+  max-width: 900px;
+  margin: 12px auto;
+  padding: 0 12px;
+  text-align: center;
+}
+
+
+.np-cta {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.np-cta:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.np-cta:active { transform: translateY(0); }
+.np-cta::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 2px solid var(--np-inset, #5a8a5f);
+  border-radius: 8px;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.acorn-row {
+  --gap: 16px;
+  display: flex;
+  gap: var(--gap);
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width:70%;
+  margin: 12px auto;
+}
+
+.acorn-row img {
+  display: block;
+  /* cap at natural size, then shrik with container */
+  width: min(300px, calc((80% - 2 * var(--gap)) / 3));
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  flex: 0 0 auto;
+}
+
+/* Sidebar: fixed width  */
+.sidebar {
+  box-sizing: border-box;
+  width: 320px;
+  min-width: 320px;
+  max-width: 27%;
+  padding: 0 8px;
+  flex: 0 0 320px;    
+}
+
+
+.sidebar .sidebar-text-block p {
+  overflow-wrap: break-word;  
+  word-break: normal;      
+  hyphens: auto;
+  -webkit-hyphens: auto;      /* Safari */
+}
+
+
+.sidebar .sidebar-text-block p {
+  text-align: justify;
+  text-justify: inter-word;
 }

@@ -1,9 +1,8 @@
 
 
+/* tightening spacing */
 
-/* douglas table */
-
-
+.table-note { font-size: 18px; color: #f3efdf; margin-top: 8px; }
  
 .compare-button {
   background-color: #446d3e;
@@ -70,4 +69,248 @@
 .squirrel-size-table .introduced {
   background-color: #b46c5d; 
   color: #1b1606;
+}
+
+
+:root {
+  --ink: #f3efdf;
+  --bg: #1b1606;
+  --accent: #d37e0f;
+  --card: #fffdf4;
+  --card-2: #fbf7ea;
+  --line: #e6dcc7;
+  --native: #dae2c1;
+  --introduced: #e4d7cc;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  margin: 0;
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+.ident-compare {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+}
+
+@media (max-width: 600px) {
+  .ident-compare {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ORANGE headings + note (override prior yellows) */
+body.identification .section-title,
+body.identification .section-kicker,
+body.identification .table-note {
+  color: var(--accent);
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  margin: 18px auto 6px;
+}
+
+.pill {
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+.section-kicker {
+  margin-bottom: 14px;
+}
+
+/* Button box */
+.control-box {
+  background: #102617;
+  border: 1px solid #2b532f;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 10px auto 14px;
+  max-width: 720px;
+}
+
+.compare-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  justify-content: center;
+}
+
+.chip {
+  display: inline-block;
+  border: 2px solid #2b532f;
+  background: #0f3b20;
+  color: #f3efdf;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.chip.is-active {
+  border: 3px solid var(--accent);
+  background: var(--accent);
+  color: #1b1606;
+}
+
+.chip:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .control-box {
+    display: none;
+  }
+}
+
+/* Matrix card with dark band behind the Characteristic column */
+.matrix-wrap {
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.12), 0 12px 24px rgba(0,0,0,.18);
+  padding: 10px 12px 12px;
+  margin: 0 auto 40px;
+  background:
+    linear-gradient(to right,
+      var(--bg) 0,
+      var(--bg) 240px,
+      var(--card) 240px,
+      var(--card) 100%);
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  font-size: 0.95rem;
+  color: #1b1606;
+}
+
+.matrix thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  text-align: left;
+  background: var(--card);
+  color: #1b1606;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+}
+
+/* header of first column sits on the dark band */
+.matrix thead th.char {
+  background: transparent;
+  color: var(--ink);
+}
+
+.matrix th,
+.matrix td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+/* Characteristic column: dark and “transparent” look */
+.matrix .char {
+  position: sticky;
+  left: 0;
+  width: 240px;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  z-index: 1;
+  border-right: 1px solid #2a2416;
+}
+
+/* Zebra striping only for data columns, not the char column */
+.matrix tbody tr:nth-child(even) td:not(.char) {
+  background: var(--card-2);
+}
+
+.matrix tbody tr:hover td:not(.char) {
+  background: #f6f0df;
+}
+
+/* Native/Introduced colors by column (works for th and td) */
+.matrix [data-col="western"],
+.matrix [data-col="douglas"] {
+  background-color: var(--native);
+  color: #1b1606;
+}
+
+.matrix [data-col="eastern"],
+.matrix [data-col="fox"] {
+  background-color: var(--introduced);
+  color: #1b1606;
+}
+
+/* keep headers readable even with tint */
+.matrix thead [data-col] {
+  font-weight: 600;
+}
+
+/* Mobile: only show two chosen species */
+@media (max-width: 1023px) {
+  .matrix .char {
+    width: 200px;
+  }
+
+  .matrix th[data-col],
+  .matrix td[data-col] {
+    display: none;
+  }
+
+  .matrix th[data-col].show,
+  .matrix td[data-col].show {
+    display: table-cell;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- */
+/* Dark, readable first column */
+.matrix thead th.char,
+.matrix tbody td.char,
+.matrix thead th:first-child,
+.matrix tbody td:first-child {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+}
+
+/* Keep it pinned and visually separated */
+.matrix .char,
+.matrix th:first-child,
+.matrix td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  box-shadow: inset -1px 0 0 #2a2416;
 }
