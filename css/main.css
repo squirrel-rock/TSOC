@@ -1732,3 +1732,222 @@ max-width: 70%;
   text-align: justify;
   text-justify: inter-word;
 }
+/*. ////         /////  style.css    ////      ///.   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*. ////         /////  sidebar.css    ////      ///.   */
+
+/* === MAIN WRAPPER === */
+.main-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+
+
+/* == ==== SIDEBAR === ==== */
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==. == FOREST BACKGROUND === == */
+.forest-background-up {
+  width: 100%;
+  padding: 30px;
+  color: #d3a90f;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackgroundLookUp.jpg);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: contain;
+}
+
+/* = headings and links = */
+.sidebar h1,
+.sidebar h2 {
+  color: #c7e489;
+}
+
+.sidebar h3 {
+  color: #c18908;
+}
+
+.sidebar a,
+.sidebar ul {
+  color: #dacb02;
+}
+
+.sidebar a:hover {
+  color: #a8da02;
+}
+
+.sidebar a:current {
+  color: #d3a90f;
+}
+
+/* ==--  NAV SECTION --=== */
+.nav-links {
+  padding: 20px 5px;
+}
+
+/* = / =  glass frame === */
+.glass-frame {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #c7e489;
+}
+
+.glass-frame a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.glass-frame:hover {
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.glass-frame:hover .squirrel-name {
+  color: #a8da02;
+}
+
+/* - SQUIRREL NAME - */
+.squirrel-name {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #efd56f;
+  text-align: center;
+  display: block;
+  text-shadow: 1px 1px 2px #00000070;
+}
+
+/* //  SQUIRREL STACK - images of 4 species == // == */
+.squirrel-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.squirrel-stack .glass-frame {
+  width: 100%;
+  max-width: 250px;
+}
+
+.squirrel-stack img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.squirrel-stack .squirrel-name {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+
+
+/* === TWO-COLUMN LAYOUT: Sidebar + Main Content === */
+.sidebar {
+  float: left;
+  width: 30%;
+  padding-left:18px;
+}
+
+.main-content {
+  float: right;
+  width: 68%;
+}
+
+/* === Responsive Layout: Stack Columns on Small Screens === */
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+
+    background-image: none !important;
+  }
+
+  .sidebar,
+  .main-content {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+
+
+
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* wrapper around sidebar + first content block */
+.sidebar-layout {
+  overflow: hidden; 
+}
+
+
+.intro-content {
+  overflow: hidden; 
+}
+
+
+.clear-float {
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar-card,
+.sidebar .glass-frame,
+.sidebar .nav-links,
+.sidebar .squirrel-stack {
+  display: inline-block;
+  text-align: left;
+}
