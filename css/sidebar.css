@@ -201,3 +201,23 @@
   display: inline-block;
   text-align: left;
 }
+
+
+/* -----   ////   -----  +/
+
+/* Mobile stack: main then sidebar, both full width */
+@media (max-width: 768px) {
+  .main-content,
+  .sidebar {
+    float: none !important;
+    clear: both;                 /* drop out of the float layout entirely */
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;     /* beat the 320px min-width from style.css */
+  }
+
+  /*  tidy spacing */
+  .main-content { margin-bottom: 20px; }
+  .sidebar { padding-left: 0; }  /* remove the desktop left padding */
+}

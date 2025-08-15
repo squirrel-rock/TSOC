@@ -1,0 +1,79 @@
+
+/* -----   ////   -----  +/
+
+/* === Responsive Layout: Stack Columns on Small Screens === */
+
+
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+
+
+
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* wrapper around sidebar + first content block */
+.sidebar-layout {
+  overflow: hidden; 
+}
+
+
+.intro-content {
+  overflow: hidden; 
+}
+
+
+.clear-float {
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar-card,
+.sidebar .glass-frame,
+.sidebar .nav-links,
+.sidebar .squirrel-stack {
+  display: inline-block;
+  text-align: left;
+}
+
+
+/* Mobile stack: main then sidebar, both full width */
+
+
+/* Phones & small tablets: main first, then sidebar; both full width */
+@media (max-width: 768px) {
+  /* Kill float layout completely */
+  .main-content,
+  .sidebar {
+    float: none !important;
+    clear: both;
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;      /* beats the 320px min-width */
+  }
+
+  /* Undo desktop-only sizing on the sidebar */
+  .sidebar {
+    padding-left: 0;
+    flex: initial !important;      /* neutralize flex: 0 0 320px */
+  }
+
+  /* Optional niceties */
+  .main-content { margin-bottom: 20px; }
+  .main-wrapper { background-image: none !important; }
+}
