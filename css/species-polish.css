@@ -261,3 +261,41 @@ body#species-page #invader-info .pull-quote::after{
 
 
 /* -----   ////   -----  +/
+/* Lighten text for the melanism evidence block */
+.melanism-evidence {
+  background-color: #2a2723;   /* subtle dark brown/charcoal backdrop */
+  color: #f8f4ec;             /* light parchment text */
+  padding: 20px;
+  border-top: 4px solid #d37e0f;  /* accent line matches your squirrel orange */
+  border-bottom: 4px solid #d37e0f;
+}
+
+/* Adjust inner typography */
+.melanism-evidence h3,
+.melanism-evidence h4,
+.melanism-evidence p {
+  color: #f8f4ec;  /* override any dark site-wide defaults */
+}
+
+.melanism-copy .lede-body {
+  background: rgba(255, 255, 255, 0.08); /* faint light overlay */
+  border: 1px solid #f0d9a1;
+  border-left: 6px solid #d37e0f;
+  color: #fefcf8;   /* very light text inside box */
+}
+
+/* Button style on dark background */
+.melanism-evidence .np-cta {
+  display: inline-block;
+  background: #d37e0f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.melanism-evidence .np-cta:hover {
+  background: #a95f0b;
+  color: #fff;
+}

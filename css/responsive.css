@@ -77,3 +77,691 @@
   .main-content { margin-bottom: 20px; }
   .main-wrapper { background-image: none !important; }
 }
+
+/*  ----  ---- */
+/* Lede block: tighter, more intentional */
+.lede-card {
+  padding: 0 24px;
+  margin: 0 auto 24px auto;
+}
+
+.lede-title {
+  font-size: 26px;
+  line-height: 1.4;
+  color: #3f2805;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.lede-title .lede-sub {
+  display: block;
+  font-weight: 600;
+  color: #6e2e28;           /* warm accent for the second line */
+  margin-top: 8px;
+}
+
+.lede-body {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #2D2D2B;
+  text-align: left;
+  background-color: #f7f2e4; /* your light card tone */
+  border: 1px solid #d37e0f; /* warm accent */
+  border-left: 6px solid #d37e0f;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 0 auto 12px auto;
+  max-width: 960px;
+}
+
+/* Info note inside this section—tighten spacing */
+.figure-note {
+  max-width: 1100px;
+  padding: 16px 20px;
+  margin: 16px auto 20px auto;
+}
+
+/* Three-across figure grid */
+.figure-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.figure-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption-sm {
+  font-size: 14px;
+  color: rgb(95, 2, 2);
+  margin-top: 6px;
+}
+
+/* Utility: a touch more space above the ident line */
+.u-mt-8 { margin-top: 8px; }
+
+/* Optional: constrain extra-wide screens a bit for comfort */
+@media (min-width: 1400px) {
+  .lede-body { max-width: 1100px; }
+}
+  
+  
+/* Douglas section styling (reuses lede + figure grid base) */
+
+/* Quote under main heading */
+.lede-quote {
+  font-size: 20px;
+  font-style: italic;
+  margin: 8px 0 14px 0;
+  color: #5b3a09;
+}
+.lede-quote .author {
+  font-size: 16px;
+  color: #7a5230;
+}
+
+/* Species facts card */
+.species-facts {
+  background: #f7f2e4;            /* warm, light backdrop */
+  border: 1px solid #d37e0f;      /* gold accent */
+  border-left: 6px solid #d37e0f; /* visual anchor stripe */
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.facts-heading {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  color: #3f2805;
+}
+
+.facts-sub {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #6e2e28;
+  font-weight: 500;
+}
+
+.facts-list {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 17px;
+  color: #2D2D2B;
+}
+
+.facts-list li {
+  margin-bottom: 6px;
+}
+
+/* ============================
+   "Compare the three" header
+   ============================ */
+
+/* container polish */
+.compare-block {
+  /* keep it centered and breathing a bit */
+  max-width: 1200px;
+  padding: 8px 16px;
+  margin: 0 auto 12px auto;
+}
+
+/* h2 pill already exists; just tune color & spacing here */
+.title-compare {
+  color: #d37e0f;               /* your warm gold */
+  margin-bottom: 10px;          /* give room before the H3 */
+}
+
+/* species line below the title */
+.species-line {
+  /* replace inline styles with predictable spacing */
+  font-family: "National Park", Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0 6px 0;        /* less extreme than +60 / -30 */
+}
+
+/* color accents per species */
+.species-line .western { color: rgb(174, 173, 173); }  /* cool gray */
+.species-line .eastern { color: rgb(232, 229, 175); }  /* pale gold */
+.species-line .fox     { color: rgb(240, 171, 32);  }  /* orange */
+.species-divider       { color: #caa874; padding: 0 10px; }
+
+/* ============================
+   Icons row (flex, responsive)
+   ============================ */
+
+/* We keep your existing classes `icons compare-icons` */
+.compare-icons {
+  /* Flex gives us even spacing and an easy wrap when needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Let it wrap gracefully on narrow screens */
+  flex-wrap: wrap;
+
+  /* gap: row-gap px / column-gap px */
+  row-gap: 16px;   /* vertical space when they wrap to a new line */
+  column-gap: 24px;/* horizontal space between items */
+
+  /* normalize paragraph defaults */
+  margin: 10px auto 0 auto;
+  padding: 0;
+}
+
+/* Make sure images behave predictably */
+.compare-icons img {
+  display: block;
+  height: auto;
+}
+
+/* species icons: set a consistent baseline width,
+   but allow individual overrides via the width attr you already use */
+.species-icon {
+  /* If width attr is present in HTML, it wins; this is the fallback */
+  width: 90px;
+}
+
+/* acorn bullets: visually lighter separators */
+.acornBullet {
+  width: 28px;                 /* slightly smaller than species icons */
+  margin: 0 4px;               /* tiny breathing room */
+  opacity: 0.95;               /* soften a touch */
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
+
+/* If you ever want a strict single-line behavior, add .nowrap to the <p>:
+   <p class="icons compare-icons nowrap"> ... </p> */
+.compare-icons.nowrap {
+  flex-wrap: nowrap;           /* force one line */
+  overflow-x: auto;            /* allow scroll on very small screens */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ============================
+   Responsive tweaks
+   ============================ */
+
+/* Medium screens: reduce sizes a bit to avoid crowding */
+@media (max-width: 900px) {
+  .species-line { font-size: 22px; }
+  .species-icon { width: 84px; }   /* will be overridden by HTML width if set */
+  .acornBullet  { width: 24px; }
+  .compare-icons { column-gap: 20px; row-gap: 14px; }
+}
+
+/* Small phones: tighter but still airy wrap */
+@media (max-width: 600px) {
+  .species-line { font-size: 20px; letter-spacing: 0.4px; }
+  .species-icon { width: 74px; }
+  .acornBullet  { width: 22px; }
+  .compare-icons { column-gap: 16px; row-gap: 12px; }
+}
+
+/* Responsive fox banner
+   - <picture> swaps source at 768px
+   - Keep styling consistent with  warm, rounded look */
+.fox-banner-block {
+  max-width: 1400px;     /* comfortable cap on huge screens */
+  padding: 0 16px;
+  margin: 0 auto 12px auto;
+}
+
+.fox-banner {
+  display: block;         /* enables margin centering if needed */
+  width: 100%;            /* fill container width */
+  height: auto;           /* keep aspect ratio */
+  border-radius: 8px;     /* matches  card radius */
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+}
+
+/* Optional: tighten list spacing under the banner */
+.fox-banner-block ul {
+  max-width: 900px;
+  margin: 10px auto 0 auto;
+  padding-left: 22px;
+  line-height: 1.6;
+}
+
+/*------------ ...> */
+
+/* =========================================================
+   Shared polish for these comparison blocks
+   - Reuses your previously added .lede-card, .lede-title, .lede-body,
+     .figure-grid, .caption-sm styles.
+   - Adds section-specific spacing so the two sets feel consistent.
+   ========================================================= */
+
+/* Give both sections similar rhythm */
+.compare-sitting,
+.compare-heads {
+  max-width: 1400px;             /*  cap on ultrawide screens */
+  padding: 0 16px;
+  margin: 18px auto 28px auto;
+}
+
+/* Tighten the lede titles a bit (these are H3s here) */
+.compare-sitting .lede-title,
+.compare-heads  .lede-title {
+  /* readable size for sub-section headings */
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: #3f2805;
+}
+
+/* Lede body inside these compare blocks:
+   - centered option looks good for short sentences */
+.compare-sitting .lede-body,
+.compare-heads  .lede-body {
+  max-width: 960px;
+  margin: 0 auto 8px auto;
+}
+
+/* Figure grid tweaks (3-across) */
+.compare-sitting .figure-grid figure,
+.compare-heads  .figure-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.compare-sitting .figure-grid img,
+.compare-heads  .figure-grid img {
+  display: block;
+  width: 100%;             
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+/* Small caption text under each image */
+.compare-sitting .caption-sm,
+.compare-heads  .caption-sm {
+  font-size: 14px;
+  color: rgb(95, 2, 2);
+  margin-top: 6px;
+}
+
+/* Spacing for the ident line beneath each grid */
+.u-mt-8 { margin-top: 8px; }
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 900px) {
+  .compare-sitting .lede-title,
+  .compare-heads  .lede-title { font-size: 22px; }
+}
+
+@media (max-width: 600px) {
+  .compare-sitting,
+  .compare-heads { padding: 0 12px; }
+  .compare-sitting .lede-title,
+  .compare-heads  .lede-title { font-size: 20px; }
+  .compare-sitting .caption-sm,
+  .compare-heads  .caption-sm { font-size: 13px; }
+}
+
+/* -----------  ---- */
+
+/* =========================================================
+   MISINFORMATION CARD (float-free, responsive)
+   - Replaces old float-based layout with CSS Grid.
+   - Mobile-first: 1 column (image full width), then 2 cols ≥900px.
+   - Keeps your "bad" info-card styling but tightens type & spacing.
+   ========================================================= */
+
+/* Card wrapper tweaks (piggybacks on .info-card.bad) */
+.misinfo-card {
+  /* soften the "bad" card just a touch for long text */
+  padding: 20px 20px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.10);
+  max-width: 1200px;        /* readable cap inside wide pages */
+  margin: 18px auto;        /* balance above/below */
+}
+
+/* Headings rhythm (reduce jumpiness between h3/h4/h5) */
+.misinfo-header h3 {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+}
+.misinfo-header h5 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  letter-spacing: .2px;
+}
+.misinfo-header h4 {
+  margin: 0 0 14px 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+/* The responsive grid that replaces floats */
+.misinfo-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: single column */
+  gap: 16px;                  /* space between image and text */
+}
+
+/* Image block */
+.misinfo-media {
+  margin: 0;                  /* reset default figure margins */
+  text-align: center;
+}
+.misinfo-media img {
+  display: block;
+  width: 100%;                /* full-width image on mobile */
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #c8b278;  /* warm line that fits your palette */
+  box-shadow: 0 2px 6px rgba(0,0,0,.18);
+}
+.misinfo-media .ident {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6e2e28;            /* tie back to your warm accents */
+}
+
+/* Text block */
+.misinfo-text {
+  line-height: 1.7;
+  font-size: 18px;
+}
+.misinfo-text p {
+  margin: 10px 0;
+}
+
+/* ---------- Desktop and large tablets ---------- */
+@media (min-width: 900px) {
+  .misinfo-grid {
+    /* Two columns: left media has a comfortable max, right text fills */
+    grid-template-columns: minmax(280px, 460px) 1fr;
+    gap: 20px 24px;
+    align-items: start;     /* keep top-aligned for long text */
+  }
+  .misinfo-media img {
+    /* At desktop, let the media column define the image width.
+       Still responsive if the page narrows. */
+    width: 100%;
+  }
+}
+
+/* ---------- Accessibility & link affordance polish ---------- */
+.misinfo-card a {
+  color: #3f2805;
+  text-decoration-color: rgba(211, 126, 15, 0.55);
+  text-underline-offset: 2px;
+}
+.misinfo-card a:hover {
+  color: #7a463a;
+  text-decoration-color: rgba(211, 126, 15, 0.9);
+}
+
+/* ---------- Safety net: neutralize any legacy floats in this card ----------
+   If this card ever contains the old float classes by accident, these rules
+   ensure they won't collapse the text into a skinny column on mobile. */
+.misinfo-card .float-wrapper,
+.misinfo-card .float-image-block,
+.misinfo-card .float-text,
+.misinfo-card .float-thumb {
+  float: none !important;
+  width: auto !important;
+  max-width: none !important;
+  /* Let our grid handle layout; we don't display:none in case content is reused */
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* ---   ------- */
+/* ========== Melanism evidence block ========== */
+/* Make the background reach the screen edge (nice on mobile) */
+.edge-bleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Grid: 1 column by default (mobile), 2 columns on desktop */
+.melanism-grid {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+  /* mobile-first: one column, image stacked above text */
+  grid-template-columns: 1fr;
+  padding: 10px 12px; /* inner safety padding so text doesn't kiss the bezel */
+}
+
+/* Desktop: image left column up to 840px wide */
+@media (min-width: 900px) {
+  .melanism-grid {
+    grid-template-columns: minmax(320px, 840px) 1fr; /* image | text */
+    gap: 24px;
+    padding: 10px 16px;
+  }
+}
+
+/* Figure and image */
+.melanism-figure { margin: 0; text-align: center; }
+.melanism-figure img {
+  display: block;
+  width: 100%;        /* full width of its column */
+  height: auto;
+  max-width: 840px;   /* respect your native width on large screens */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  border: 1px solid #c8b278;
+}
+
+/* Right column typography */
+.melanism-copy .lede-title {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  color: #3f2805;
+  text-align: left;
+}
+.melanism-copy .lede-body {
+  font-size: 18px;
+  line-height: 1.7;
+  background: #f7f2e4;
+  color:#2D2D2B;
+  border: 1px solid #d37e0f;
+  border-left: 6px solid #d37e0f;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .melanism-copy .lede-title { font-size: 22px; text-align: center; }
+}
+
+/* Utility */
+.u-center { text-align: center; }
+.u-mt-8 { margin-top: 8px; }
+
+
+/*. --misidentification text shooting out - fix- */
+
+/* targeted version */
+@media (max-width: 600px) {
+  .edge-bleed {
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    width: 100vw !important;
+    border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+    padding-left: 12px; padding-right: 12px;
+  }
+}
+
+
+/* ----- melanism faq ---- */
+/* ============================================
+   Melanism FAQ polish (dark-page friendly)
+   - Bigger, light heading
+   - Centered, clickable image (300px wide)
+   - Dark cards = light text inside details
+   ============================================ */
+
+/* Section wrapper: keep centered and readable */
+.melanism-faq {
+  max-width: 1100px;
+  margin: 0 auto 24px auto;
+  padding: 0 12px;
+}
+
+/* Big, light heading for dark backgrounds */
+.melanism-faq .faq-heading {
+  /* clamp: mobile 28px → up to 40px on wide screens */
+  font-size: clamp(28px, 5.5vw, 40px);
+  line-height: 1.15;
+  color: #f8f4ec;             /* light text on Species page */
+  text-align: center;
+  margin: 4px 0 10px 0;
+}
+
+/* Center the figure; image is 300px wide but responsive */
+.melanism-faq .faq-figure {
+  margin: 8px auto 12px auto;
+  text-align: center;
+}
+.melanism-faq .faq-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;                /* responsive downscale on very small phones */
+  max-width: 300px;           /* cap at 300px as requested */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.2); /* subtle on dark */
+}
+.melanism-faq .caption-sm {
+  font-size: 14px;
+  color: #e9dcc0;
+  margin-top: 6px;
+}
+
+/* Use your dark card variant inside details so text is light */
+.melanism-faq .info-card-dark {
+  background-color: rgba(255,255,255,0.08);
+  border: 1px solid #c89226;
+  border-left: 6px solid #d37e0f;
+  color: #f3ecd6;             /* base light text */
+}
+
+/* Ensure all text inside the dark cards is actually light */
+.melanism-faq .info-card-dark h3,
+.melanism-faq .info-card-dark h4,
+.melanism-faq .info-card-dark h5,
+.melanism-faq .info-card-dark p,
+.melanism-faq .info-card-dark a {
+  color: #f3ecd6;
+}
+.melanism-faq .info-card-dark a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Summary row: improve affordance on dark */
+.melanism-faq .faq-summary {
+  color: #f3ecd6;
+}
+.melanism-faq .faq-item[open] .faq-summary,
+.melanism-faq .faq-summary:hover {
+  background: rgba(211,126,15,0.10);
+}
+
+/* Mobile: remove outer gutters if you want full-bleed cards here */
+@media (max-width: 600px) {
+  .melanism-faq { padding-left: 0; padding-right: 0; }
+  .melanism-faq .info-card-dark {
+    border: 0; border-radius: 0; box-shadow: none;
+    margin-left: calc(50% - 50vw);   /* true edge-to-edge */
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    padding-left: 12px; padding-right: 12px; /* safe inner pad */
+  }
+}
+
+/* ============================
+   Melanism evidence: polish
+   ============================ */
+
+/* A small label for genetics in the caption */
+.gene-badge {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Standout box for the key message */
+.lede-callout {
+  background: rgba(255,255,255,0.10);         /* subtle light film on dark */
+  border: 2px solid #d37e0f;                  /* your warm accent */
+  border-left-width: 8px;                     /* accent bar */
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 12px 0 14px;
+  text-align: center;
+}
+.lede-callout .lede-title {
+  margin: 0;
+  color: #f8f4ec;                             /* ensure light text */
+  font-size: clamp(22px, 5.2vw, 28px);
+}
+
+/* Give space below the figure before the callout/text */
+.melanism-figure .caption-sm { 
+  margin-top: 6px; 
+  margin-bottom: 12px; 
+}
+
+/* MOBILE: true full-bleed, no left gutter, no overflow */
+@media (max-width: 600px) {
+  /* push the whole block to the edges */
+  .melanism-evidence.edge-bleed {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 0;                                 /* remove inner padding */
+  }
+
+  /* remove the left-only gutter you were seeing */
+  .melanism-grid { 
+    padding: 0; 
+  }
+
+  /* make the FIGURE itself bleed to the bezel */
+  .melanism-figure {
+    margin: 0; 
+  }
+  .melanism-figure img {
+    display: block;
+    width: 100vw;                               /* exactly the viewport width */
+    max-width: 100vw;
+    height: auto;
+  }
+
+  /* keep text comfortably in from the edge */
+  .melanism-copy { 
+    padding: 0 12px 12px;
+  }
+}
