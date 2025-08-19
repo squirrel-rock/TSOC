@@ -2312,14 +2312,7 @@ body.identification h4.bold{
 }
 
 
-body#species-page h1,
-body.home h1,
-body.about h1 {
-  font-size: clamp(28px, 6.5vw, 64px);
-  line-height: 1.1;
-  word-break: break-word;
-  hyphens: auto;
-}
+
 body#species-page h1.banner-top {
   font-size: clamp(32px, 7vw, 64px);
 }
@@ -2346,8 +2339,7 @@ body.about h1,
 body.contact h1{
   font-size: clamp(28px, 6.5vw, 64px);
   line-height: 1.1;
-  word-break: break-word;
-  hyphens: auto;
+  white-space: normal;
 }
 
 .trio-wrap { max-width: 1400px; margin: 12px auto 0; }
