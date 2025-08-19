@@ -1,5 +1,4 @@
-# Ignore HTML files with a dash in the filename
-*-*.html
+
 
 # Ignore specific folders
 _RangeMaps-week9fix/
@@ -14,3 +13,13 @@ img-sqr-copy/
 
 # Ignore any folder containing 'midterm50B'
 *midterm50B*/
+
+# ignore hyphenated HTML
+**/*-*.html
+
+# but keep this one quiz
+!CS50C_Week9/
+!CS50C_Week9/Squirrel-Personality-Quiz.html
+
+!html
+!html/squirrel-evolution.html

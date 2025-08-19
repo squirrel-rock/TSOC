@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    
+    <title>Individual Tree Squirrel Species</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/species-polish.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+
+ <!-- GOOGLE FONTS CODE TO LOAD FONTS -->
+
+<!-- Loading Source Serif Pro and Raleway from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Source+Serif+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+
+
+<!-- -->
+  </head>
+
+
+
+
+<body id="species-page"  class="species">
+
+  <!-- Word Cloud taxonomy random
+<div class="wordcloud-wrapper">
+  <img src="../graphics/Sciuridae4WordCloud.jpg" alt="Squirrel word cloud" class="wordcloud-img">
+</div>
+-->
+  
+<!-- //////// header  //////// -->
+<header>
+<!-- spacer box -->
+<div class="spaceboxGold2">
+  <div class="nav-top-row spaceboxDark">
+    <div class="nav-logo">
+      <img src="../logo/TSOClogo.png" alt="TSOC logo">
+    </div>
+    <div class="nav-row nav-row-primary">
+      <a href="../index.html">Home</a>
+      <a href="../html/about.html" >About</a>
+      <a href="../html/contact.html" >Contact</a>
+    </div>
+    </div>
+    
+  <div class="nav-row nav-row-secondary">
+      <a href="../html/identification.html" >ID Guide</a>
+            <a href="i../html/dentification-full.html" >Compare Chart</a>
+      <a href="../html/species.html" class="active">Species Info</a>
+    <a href="inLeaflet.html">Range Maps</a>
+      <a href="../html/faq.html">FAQ</a>
+    </div>
+
+  
+</header>
+
+<title>What Kind of Squirrel Are You?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+/* ===== DARK BACKGROUND QUIZ STYLES ( ===== */
+
+/* Base */
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #1b1606; /* deep brown */
+  color: #f8f4e9;      /* light cream text */
+}
+.quiz-wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #2a2310; 
+  border: 2px solid #c7b090; 
+  border-radius: 12px;
+}
+h1 {
+  font-size: 28px;
+  margin: 0 0 12px 0;
+  color: #f4e1c1; /* warm light heading */
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 8px 0 16px;
+}
+.disclaimer {
+  background: #e2e2e2; 
+  border-top: 4px solid #c79090;
+  padding: 12px;
+ border-bottom: 4px solid #c79090;
+  font-size: 17px;
+  line-height:1.4;
+  color: #3a1c00;
+}
+
+/* Form layout */
+form { margin-top: 16px; }
+fieldset { border: 0; margin: 0 0 20px 0; padding: 0; }
+legend { font-weight: bold; margin-bottom: 8px; color: #f8f4e9; }
+.q {
+  border: 1px solid #c7b090;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #1f1a0d; /* dark card background */
+}
+.q-text {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #f8f4e9;
+}
+
+/* Scale + custom radios */
+.scale {
+  display: inline-flex;       /* shrink-wrap to content width */
+  gap: 10px;
+  align-items: center;
+  padding: 2px 0;
+}
+.scale label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #2a2310;
+  color: #f8f4e9;
+  border: 1px solid #5a4a2a;
+  cursor: pointer;
+  user-select: none;
+}
+.scale label:hover { background: #3f321a; }
+
+/* radio btns*/
+.scale input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #c7b090;
+  background: #1f1a0d;
+  display: inline-block;
+  position: relative;
+  outline: none;
+}
+.scale input[type="radio"]:focus-visible {
+  box-shadow: 0 0 0 3px rgba(199,176,144,0.35);
+}
+.scale input[type="radio"]:checked {
+  background:
+    radial-gradient(circle at 50% 50%, #c7b090 45%, transparent 46%) no-repeat;
+}
+.scale .hint {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 8px;
+  color: #c7b090;
+}
+
+/* Scale ends text (now matches scale width) */
+.ends {
+  font-size: 12px;
+  color: #c7b090;
+  margin: 6px 0 10px 0;
+  display: flex;
+  justify-content: space-between; /* left under 1, right under 5 */
+  pointer-events: none;
+}
+
+/* Buttons */
+.actions { margin-top: 18px; display: flex; gap: 10px; }
+button {
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid #c7b090;
+  background: #5a4a2a; /* warm brown button */
+  color: #f8f4e9;
+  cursor: pointer;
+}
+button:hover { background: #765e3a; }
+
+/* Result */
+.result {
+  margin-top: 22px;
+  padding: 16px;
+  border: 2px solid #c7b090;
+  border-radius: 12px;
+  background: #3f321a;
+  color: #f8f4e9;
+}
+.result h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #f4e1c1;
+}
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #c7b090;
+  margin-left: 8px;
+  background: #2a2310;
+  color: #f8f4e9;
+}
+.traits { margin: 8px 0 0 18px; }
+.note { font-size: 13px; color: #c7b090; margin-top: 8px; }
+.also { font-size: 14px; margin-top: 8px; color: #f4e1c1; }
+.sr { position: absolute; left: -9999px; }
+
+body {
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  background: #1b1606; /* deep brown body background */
+  color: #f8f4e9;
+}
+.quiz-wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #0f2417; /* deep forest green */
+  border: 2px solid #c7b090;
+  border-radius: 12px;
+}
+
+/* Answer buttons */
+.scale label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #3a5f44; /* lighter green */
+  color: #f8f4e9;
+  border: 1px solid #2d4a35;
+  cursor: pointer;
+  user-select: none;
+}
+.scale label:hover {
+  background: #4e7b59; /* hover lighter green */
+}
+
+/* L
+...learn more link in results */
+.result a {
+  color: #ffb84d; /* bright, light orange */
+  text-decoration: underline;
+}
+.result a:hover {
+  color: #e69900; /* slightly darker orange on hover */
+}
+</style>
+</head>
+<body>
+  <div class="quiz-wrap">
+    <h1>What Kind of Squirrel Are You?</h1>
+    <p>Answer a few quick statements to see which California squirrel you’re most like.</p>
+    
+
+    <form id="squirrelQuiz" novalidate>
+      <fieldset aria-describedby="scaleHelp">
+        <legend>How much do you agree?</legend>
+        <p id="scaleHelp" class="sr">Use the 1–5 scale where 1 is Strongly Disagree and 5 is Strongly Agree.</p>
+
+        <!-- Questions injected here -->
+        <div id="questions"></div>
+
+        <div class="actions">
+          <button type="button" id="submitBtn">Get My Squirrel</button>
+          <button type="button" id="resetBtn" aria-describedby="resetHint">Clear</button>
+        </div>
+        <span id="resetHint" class="sr">Clears all selected answers.</span>
+      </fieldset>
+    </form>
+
+    <div id="result" class="result" aria-live="polite" aria-atomic="true" role="status" hidden></div>
+    <br>
+    <div class="disclaimer">
+      Disclaimer: This quiz is designed for playful amusement and is not meant to either insult or revere any squirrel species more than any other. All squirrels are God's creatures. Behavioral descriptions for <strong>Eastern Gray</strong> and <strong>Fox Squirrels</strong> reflect how these introduced species behave in <strong>California</strong> (but they hail from the other side of the Mississipi river and beyond.) Western Gray and Douglas Squirrels are native and described as they behave naturally in their home environment.
+    </div>
+  </div>
+
+<script>
+/* =========================
+   CONFIG
+   ========================= */
+const QUESTIONS = [
+  // Axis A: Urban (+) vs Forest (–)  [reverse marks the Forest-leaning phrasing]
+  { id: 1, text: "I’m energized by busy places and don’t mind noise.", axis: "A", reverse: false },
+  { id: 2, text: "Given free time, I’d choose a quiet trail over a lively neighborhood stroll.", axis: "A", reverse: true },
+  { id: 3, text: "I’m quick to figure out how to “work the system” (parking, lines, shortcuts).", axis: "A", reverse: false },
+  { id: 4, text: "I feel most myself where there are tall trees and few people.", axis: "A", reverse: true },
+  { id: 5, text: "I adapt fast when my surroundings change (construction, detours, new routines).", axis: "A", reverse: false },
+  { id: 6, text: "I’d rather plan around nature’s rhythms than city schedules.", axis: "A", reverse: true },
+
+  // Axis B: Bold (+) vs Watchful (–) — updated 7, 9, 11 per your picks
+  { id: 7,  text: "I volunteer for things before knowing all the details.", axis: "B", reverse: false },  // #7 option 3
+  { id: 8,  text: "I prefer to watch a bit before I jump in.", axis: "B", reverse: true },
+  { id: 9,  text: "I dive in quickly when I see a chance for something new.", axis: "B", reverse: false }, // #9 option 2
+  { id: 10, text: "I avoid drawing attention until I’m sure it’s safe or smart.", axis: "B", reverse: true },
+  { id: 11, text: "I stay calm and flexible when situations shift suddenly.", axis: "B", reverse: false }, // #11 option 3
+  { id: 12, text: "I keep a mental map of exit routes before I commit.", axis: "B", reverse: true },
+];
+
+// Species mapping (California context). Anchors map to combined species page.
+const SPECIES = {
+  "Urban+Bold": {
+    name: "Fox Squirrel",
+    tagline: "The Street‑Smart Forager",
+    notes: "Non‑native in California; behavior described for urban/suburban CA.",
+    traits: [
+      "Adaptable and opportunistic",
+      "Quick to explore new food sources",
+      "Comfortable around people",
+      "Resilient under change",
+    ],
+    anchor: "fox",
+  },
+  "Urban+Watchful": {
+    name: "Eastern Gray",
+    tagline: "The Cautious Urban Naturalist",
+    notes: "Non‑native in California; behavior described for parks & neighborhoods in CA.",
+    traits: [
+      "Calm observer; watches first",
+      "Uses cover and steady routines",
+      "Thrives at the park edge",
+      "Adept in city–green mosaics",
+    ],
+    anchor: "eastern",
+  },
+  "Forest+Bold": {
+    name: "Douglas Squirrel",
+    tagline: "The Bold Forest Voice",
+    notes: "Native to California conifer forests.",
+    traits: [
+      "Small body, big presence",
+      "Vocal and territorial confidence",
+      "Resource‑savvy (cones, fungi)",
+      "Energetic in conifer stands",
+    ],
+    anchor: "douglas",
+  },
+  "Forest+Watchful": {
+    name: "Western Gray",
+    tagline: "The Quiet Forest Specialist",
+    notes: "Native to California woodlands.",
+    traits: [
+      "Prefers mature woodlands",
+      "Measured, low‑key around people",
+      "Acorn‑centric foraging",
+      "Calm, deliberate movements",
+    ],
+    anchor: "western",
+  }
+};
+
+// Combined page URL:
+const SPECIES_URL = (anchor) => `../html/species.html#${anchor}`;
+
+/* =========================
+   RENDER QUESTIONS
+   ========================= */
+const questionsEl = document.getElementById("questions");
+
+function renderQuestions() {
+  QUESTIONS.forEach((q, idx) => {
+    const qWrap = document.createElement("div");
+    qWrap.className = "q";
+    qWrap.setAttribute("data-qid", q.id);
+    qWrap.setAttribute("data-axis", q.axis);
+    qWrap.setAttribute("data-reverse", q.reverse ? "1" : "0");
+
+    const labelId = `q${q.id}-label`;
+
+    qWrap.innerHTML = `
+      <div class="q-text" id="${labelId}">
+        ${idx + 1}. ${q.text}
+      </div>
+
+      <div class="scale" role="group" aria-labelledby="${labelId}">
+        ${[1,2,3,4,5].map(v => `
+          <label>
+            <input type="radio" name="q${q.id}" value="${v}" aria-label="${v}">
+            ${v}
+          </label>
+        `).join("")}
+        <span class="hint">Choose 1–5</span>
+      </div>
+
+      <div class="ends">
+        <span>Strongly Disagree</span>
+        <span>Strongly Agree</span>
+      </div>
+    `;
+
+    questionsEl.appendChild(qWrap);
+  });
+
+  // After rendering, align each .ends width to its .scale width
+  syncEndsWidth();
+}
+renderQuestions();
+
+/* Measure & sync the ends width with its scale width */
+function syncEndsWidth() {
+  const qs = document.querySelectorAll(".q");
+  qs.forEach(q => {
+    const scale = q.querySelector(".scale");
+    const ends  = q.querySelector(".ends");
+    if (!scale || !ends) return;
+    // Use scrollWidth to get the true content width of the inline-flex row
+    const w = Math.ceil(scale.scrollWidth);
+    ends.style.width = w + "px";
+  });
+}
+
+window.addEventListener("resize", syncEndsWidth);
+
+/* =========================
+   SCORING
+   ========================= */
+function getScores() {
+  let A = 0, B = 0;
+  let countA = 0, countB = 0;
+
+  const groups = document.querySelectorAll(".q");
+  for (const g of groups) {
+    const axis = g.getAttribute("data-axis");
+    const reverse = g.getAttribute("data-reverse") === "1";
+    const checked = g.querySelector('input[type="radio"]:checked');
+    if (!checked) continue;
+
+    let val = parseInt(checked.value, 10);
+    if (reverse) val = 6 - val; // reverse-score
+
+    if (axis === "A") { A += val; countA++; }
+    if (axis === "B") { B += val; countB++; }
+  }
+
+  return {
+    A_score: A,
+    B_score: B,
+    A_count: countA,
+    B_count: countB,
+    A_midline: 3 * (QUESTIONS.filter(q => q.axis === "A").length),
+    B_midline: 3 * (QUESTIONS.filter(q => q.axis === "B").length),
+  };
+}
+
+function classify(A_score, B_score, A_mid, B_mid) {
+  const A_side = (A_score >= A_mid) ? "Urban" : "Forest";
+  const B_side = (B_score >= B_mid) ? "Bold" : "Watchful";
+  const key = `${A_side}+${B_side}`;
+  return { A_side, B_side, key };
+}
+
+function nearestSecondary(A_score, B_score, A_mid, B_mid) {
+  // Suggest the adjacent quadrant by flipping the axis that’s closest to midline
+  const dA = Math.abs(A_score - A_mid);
+  const dB = Math.abs(B_score - B_mid);
+  const primary = classify(A_score, B_score, A_mid, B_mid);
+  let { A_side, B_side } = primary;
+  if (dA < dB) { A_side = (A_side === "Urban") ? "Forest" : "Urban"; }
+  else { B_side = (B_side === "Bold") ? "Watchful" : "Bold"; }
+  return `${A_side}+${B_side}`;
+}
+
+/* =========================
+   RESULT RENDER
+   ========================= */
+const resultEl = document.getElementById("result");
+function showResult(primaryKey, secondaryKey = null, scores) {
+  const P = SPECIES[primaryKey];
+  if (!P) return;
+
+  const lines = [
+    `<h2>${P.name} — ${P.tagline} <span class="badge">${primaryKey}</span></h2>`,
+    `<p><strong>Your fit:</strong> ${primaryKey.replace("+", " + ")}</p>`,
+    `<ul class="traits">${P.traits.map(t => `<li>${t}</li>`).join("")}</ul>`,
+    P.notes ? `<p class="note">${P.notes}</p>` : "",
+    `<p><a href="${SPECIES_URL(P.anchor)}">Learn more about the ${P.name}</a></p>`
+  ];
+
+  if (secondaryKey && SPECIES[secondaryKey]) {
+    const S = SPECIES[secondaryKey];
+    lines.push(`<p class="also">You also share traits with: <strong>${S.name}</strong> <span class="badge">${secondaryKey}</span>.</p>`);
+  }
+
+  // Debug/calibration — remove if you don’t want these visible
+  lines.push(`<p class="note">Axis scores — A (Urban vs Forest): <strong>${scores.A_score}</strong> / midline ${scores.A_midline}; B (Bold vs Watchful): <strong>${scores.B_score}</strong> / midline ${scores.B_midline}.</p>`);
+
+  resultEl.innerHTML = lines.join("\n");
+  resultEl.hidden = false;
+}
+
+/* =========================
+   HANDLERS
+   ========================= */
+document.getElementById("submitBtn").addEventListener("click", () => {
+  const { A_score, B_score, A_count, B_count, A_midline, B_midline } = getScores();
+
+  // Simple validation
+  if (A_count + B_count < QUESTIONS.length) {
+    resultEl.innerHTML = `<p>Please answer all ${QUESTIONS.length} items to get your result.</p>`;
+    resultEl.hidden = false;
+    return;
+  }
+
+  const { key } = classify(A_score, B_score, A_midline, B_midline);
+
+  // Tie sensitivity: if exactly on midline for either axis, offer a secondary suggestion
+  let secondary = null;
+  const tiedA = (A_score === A_midline);
+  const tiedB = (B_score === B_midline);
+  if (tiedA || tiedB) {
+    secondary = nearestSecondary(A_score, B_score, A_midline, B_midline);
+  }
+
+  showResult(key, secondary, { A_score, B_score, A_midline, B_midline });
+});
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  document.querySelectorAll('#squirrelQuiz input[type="radio"]:checked').forEach(i => i.checked = false);
+  resultEl.hidden = true;
+  resultEl.innerHTML = "";
+  // Re-sync ends width in case layout changed
+  syncEndsWidth();
+});
+</script>
+
+
+
+<hr>
+
+
+<!--  ///   footer    ///  -->
+<footer class="allsite-footer">
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/identification.html">Squirrel ID</a></li>
+           <li><a href="../html/identification-full.html">Comparison Chart</a></li>
+      <li><a href="../html/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <p class="footer-credit">Website designed by Kelly Durkin &bull; &copy; 2025</p>
+</footer>
+</body>
+</html>
