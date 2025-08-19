@@ -51,7 +51,7 @@
 /* -----   ////   -----  +/
 
 /* Mobile stack: main then sidebar, both full width */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main-content,
   .sidebar {
     float: none !important;

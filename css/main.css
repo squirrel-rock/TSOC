@@ -1,5 +1,828 @@
 /* /////////  /////   style.css.  ////.  //////.  */    
 
+.faq h1{
+
+  min-width:250px;
+}
+
+
+
+/* BACKGROUNDS */
+
+.twoSquirtle {
+
+  background-color:black;
+  border-left:0px;
+  border-right:0px;
+  text-align:center;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+}
+
+.banner-top {
+      width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: left;
+  background-image: url(../photos/backgrounds/redwood-dougladPeek.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:250px;
+}
+
+
+
+.banner-top h1 {
+   
+  color:#df9535;
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.6), 
+    0 0 6px rgba(255, 255, 255, 0.4), /* soft white glow */
+    0 0 12px rgba(255, 245, 210, 0.3); /* extendeing the fade */
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+h1.banner-top {
+   
+  color:#df9535;
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.6), 
+    0 0 6px rgba(255, 255, 255, 0.4), /* soft white glow */
+    0 0 12px rgba(255, 245, 210, 0.3); /* extendeing the fade */
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/*.banner-top h1{
+   color: #d3a90f;
+   color: #e1bd8d;
+   color: #fefcf8;
+} */
+
+.forest-bckgd {
+       width: 100%;
+ padding: 70px 30px 50px 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackUniformS.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forest-bckgd  h2{
+   color: #d3a90f;
+}
+
+.forest-background-up {
+       width: 100%;
+ padding: 30px;
+ color: #d3a90f;
+ color: #df9535;
+  text-align: center;
+  background-image: url(../photos/backgrounds/forestBackgroundLookUp.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.forest-background-up h1 {
+  font-size:72px; 
+  font-weight: 800;
+  color: #e1f0c4;  
+  text-align: center;
+-webkit-text-stroke: 1px rgba(0,0,0,0.3);
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.7),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+
+.words-bckgd {
+  padding:0px;
+       width: 100%;
+position: relative;
+ height:222px;
+ color: #d3a90f;
+  text-align: center;
+  background-image: url(../graphics/Sciuridae4WordCloud.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid #d3a90f;
+  border-bottom: 2px solid #d3a90f;
+    box-sizing: content-box;
+}
+
+.words-bckgd  h2{
+   color: #d3a90f;
+}
+/*
+.words-bckgd h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #280707;
+  color: #d3a90f;
+  padding: 24px 24px;
+  margin: 0; 
+
+}*/
+
+.words-bckgd h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);  /* only centeing horizontally */
+  
+  width: 250px;
+  height: 222px;
+  background-color: #280707;
+  color: #d3a90f;
+color: #df9535;
+  padding: 0; 
+  margin: 0;
+
+  line-height: 222px;  /* to vertically center the text inside */
+  text-align: center;
+  font-size: 48px; 
+}
+
+
+
+.faq h1{
+
+  min-width:250px;
+}
+
+
+
+
+
+/* -------------------------------------*/
+/* WORD CLOUD */
+.wordcloud-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wordcloud-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* THUMBNAILS */
+.thumbnail-row {
+  text-align: center;
+  margin: 16px auto;
+}
+
+.thumbnail-row a {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.thumbnail-row img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* SPECIES HEADER */
+.species-banner {
+  text-align: center;
+  padding: 20px 10px;
+
+}
+
+.species-banner a {
+  display: inline-block;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+
+
+.glass-frame2 {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px;
+  margin: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  width: 21%; 
+  min-width: 180px;
+}
+
+.glass-frame2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.glass-frame2:hover {
+  transform: scale(0.96);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.4);
+}
+
+
+/* make rows of images */
+.three-across{
+ text-align: center;
+ display:block;
+}
+
+
+.icons {
+  text-align: center;
+}
+/*.icons img {
+  width: 80px;
+  height: auto;
+}*/
+
+p.three-across
+ {
+  text-align: center;
+}
+
+p.four-across {
+  width: 100%;
+  margin: 0;
+  padding: 24px 0;
+  text-align: center;
+  background-color: #fefcf8; 
+  border-radius:8px;
+
+}
+
+
+p.three-across img {
+  width: 27%;
+  height: auto;
+}
+
+p.three-across.acorn img  {
+  width: 200px;
+  height: auto;
+}
+
+p.four-across img {
+  width: 20%;
+  height: auto;
+}
+
+
+
+/* make image or div fit to full width */
+.fullwidth { /* old fullwidth rule */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.fullwidth img {/* old fullwidth rule */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom:30px;
+}
+
+.img-contained {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-fullwidth {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.div-fullwidth {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.fullwidth.s1440 img {
+  width: 100%;
+ max-width:1440px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+/* --------------------------- */
+/*         INFO BOXES.        */
+.intro-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px 32px;
+  background-color: #fefcf8;
+  border: 4px double #2e531c;
+  color: #2D2D2B;
+  border-radius:8px;
+  font-size: 24px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* title - font weight 600 */
+.intro-box .title600 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #4d3c36;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 26px text */
+.intro-box .text26 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #2D2D2B;
+}
+
+.intro-box .text-invader {
+  font-weight: 600;
+  color: #6e2e28;
+  margin-top: 20px;
+}
+/* ------- */
+
+
+/* -- */
+
+.info-box {
+margin: 40px auto;
+width:90%;
+    max-width: 1440px;
+    background-color: #f3f3f2;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box.left {
+margin: 20px auto;
+width:90%;
+    max-width: 1000px;
+       background-color: #f6f6f6;
+    border:1px double rgb(6, 77, 2);
+    padding: 20px;
+    text-align:left;
+}
+
+
+.info-box-coral {
+margin: 20px auto;
+  width: 90%;
+    max-width: 1440px;
+ background-color: #ffffff;
+    border:3px double rgb(77, 2, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+.info-box-green {
+margin: 20px auto;
+  width: 90%;
+    max-width: 1440px;
+ background-color: #e7eae4;
+    border:3px double rgb(8, 77, 2);
+    margin-top:24px;
+      padding: 20px;
+}
+
+
+
+.spec-box {
+  background-color: #f2f8ed;
+  border: 2px solid #6c8a5d;
+
+  padding:36px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+/* Info-Card Rules */
+
+/* =====/==== INFO CARD BASE  ==//=== */
+.info-card {
+  margin: 0px auto;
+  width: 95%;
+ max-width:1440px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  color: #1f1f1f;
+  background-color: rgba(0,0,0,0.03);
+  border: 2px solid #3f3d3a; /* default gray */
+}
+
+.info-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-card h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.info-card p.ident {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.info-card img {
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.info-card.full img {
+  max-width: 95%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+/* ====================. info-card-dark ===================*/
+.info-card-dark {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid #4a3a1f; 
+  color: #f5e9c8; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4); 
+}
+
+/* Headings inside .info-card-dark */
+.info-card-dark h3 {
+  color: #e1bd8d; 
+  font-weight: 600;
+}
+
+.info-card-dark h4 {
+  color: #d3920f; 
+  font-weight: 500;
+}
+
+/* paragraph on dark card */
+.info-card-dark p {
+  color: #f0e8c2; 
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* quote text */
+.info-card-dark .quote {
+  color: #ffe7a0;
+  font-style: italic;
+}
+
+/* images */
+.info-card-dark img {
+  border: 1px solid #c8b278;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+/*-- theme color backgrounds */
+
+
+/* neutral */
+.neutral {
+  background-color: #f3f2ef;
+  border: 2px solid #888379;
+  color: #3a3a3a;
+}
+
+.neutral h3,
+.neutral h4 {
+  color: #3a3a3a;
+}
+
+/* good green */
+.good {
+  background-color: #eef4ec;
+  border: 2px solid #446d3e;
+  color: #345c30;
+}
+
+.good h3,
+.good h4 {
+  color: #345c30;
+}
+
+/* Bad red*/
+.bad {
+  background-color: #f7f1ee;
+  border: 2px solid #8b4b3e;
+  color: #6e2e28;
+}
+
+.bad h3,
+.bad h4 {
+  color: #6e2e28;
+}
+
+/* Dark */
+.dark {
+  background-color: rgba(0,0,0,0.08);
+  border: 2px solid #704300;
+  color: #4f4200;
+}
+
+.dark h3,
+.dark h4 {
+  color: #3a3a3a;
+}
+
+
+/*dark2 */
+.dark2 {
+  background-color: rgba(0,0,0,0.08);
+  border-top: 2px solid #704300;
+  color: #4f4200;
+  padding-bottom:8px;
+}
+
+.dark2 h3,
+.dark2 h4 {
+  color: #3a3a3a;
+}
+
+
+/* Darker */
+.darker {
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid #704300;
+  color: #ece3b4;
+}
+
+.darker h3,
+.darker h4 {
+  color: #f3d389;
+}
+
+/*Identification page*/
+
+
+
+.native {
+    background-color: #c7e489;
+}
+
+h2.native {
+    color:#3A5201;
+}
+
+
+.invader {
+    background-color: rgb(95, 2, 2);
+     color:#ffeeea;
+}
+
+
+h2.invader,
+h3.invader,
+h4.invader {
+     background-color: rgb(95, 2, 2);
+    color:#ffeeea;
+}
+
+/* SPECIES PAGE */
+.glass-frame {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgba(144, 154, 148, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+.glass-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+
+
+.squirrel-box {
+  max-width: 80%;
+  margin: 24px auto 40px auto;
+  padding: 24px 30px;
+  background-color: #fdfcf9;
+  border: 2px solid #c4c2b8;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+}
+
+.squirrel-box ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.squirrel-box li {
+  margin-bottom: 10px;
+}
+
+.box-heading { /* for squirrel fact list on species.html */
+  margin-top: 0;
+  color: #3a3a3a;
+  font-size: 20px;
+}
+
+
+
+/* outer skin  */
+.uber-block {
+  /*max-width: 1440px;*/
+  margin: 24px auto 40px auto;
+  padding: 24px 30px;
+  background-color: #dedddc;
+
+}
+
+/*  list styling. */
+.list-block {
+  max-width: 90%;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: #fdfdfb;  /* softer  */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+
+/* increases font size and dark greem  color*/
+.highlight-species {
+  font-weight: 700;
+
+  color: #2a4f2e; /* dark  green */
+  letter-spacing: 0.2px;
+}
+
+
+   /* --- FORCE CENTERING ---*/
+     .center {
+        text-align: center !important;
+        margin: 24px auto;
+      }
+
+/* identification page. */
+.info-card,
+.list-block,
+blockquote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tc, 
+.bc {
+  text-align:center !important;
+       margin: 24px auto;
+  display: block;
+}
+
+
+/* index.html thumbnails.  */
+
+.squirrel-natives {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.thumbnail-duo {
+  max-width: 200px;
+  width: 42%;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .thumbnail-duo {
+    display: block;
+    width: 95%;
+    max-width: 400px;
+    margin: 12px auto;
+  }
+}
+
+
+/*.   figure.  */
+.fig-faq {
+
+    float: left;
+    width: 220px;
+    margin: 6px 28px 6px 0;
+    text-align: center;
+  
+}
+
+.fig-cap-faq {
+
+  font-size: 14px;
+  color: rgb(95, 2, 2);
+  margin-top: 4px;
+}
+
+.faq .banner-top h1,
+.fullwidth .banner-top {
+   color: #d37e0f;
+  font-weight: 700;
+  font-size: 66px;
+
+
+  /* Glowing blurred dark shadow */
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.6),
+    0 2px 12px rgba(0, 0, 0, 0.8),
+    2px 4px 18px rgba(0, 0, 0, 0.4);
+ 
+
+}
+
+.banner-top {
+  width: 100%;
+  padding: 70px 30px 50px 30px;
+  text-align: left;
+  background-image: url(../photos/backgrounds/redwood-dougladPeek.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+
+  color: #df9535;
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 245, 210, 0.3);
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* global nav weight override */
+:root { --bs-nav-link-font-weight: 500; } 
+
+.topnav-header .nav-row-primary a,
+.topnav-header .nav-row-secondary a,
+.navbar .nav-link,
+.nav .nav-link {
+  font-weight: 500 !important;  
+}
+
+
+/* -----   ////   -----  +/
 
 
 /*     /////        /////. main.css. /////        /////.  //.  */
@@ -1748,7 +2571,7 @@ max-width: 70%;
 
 
 
-/*. ////         /////  sidebar.css    ////      ///.   */
+/*. ////   ---------------    /////    sidebar.css    ////    ------------  ///.   */
 
 /* === MAIN WRAPPER === */
 .main-wrapper {
@@ -1893,3 +2716,1100 @@ max-width: 70%;
   float: right;
   width: 68%;
 }
+
+
+/* ---------  ////////////. --------------  ////////////////////. ----- */
+
+/* ---- contactForm.css -----  */
+
+.contact-form{
+    width:90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f2e7d5;
+   border: 2px solid #3f2805;
+  border-radius: 12px;
+  color: #1b1606;
+}
+
+.contact-form label
+{
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #3f2805;
+}
+
+.contact-form legend {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #3f2805;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 20px;
+
+}
+
+.contact-form fieldset {
+  border: none;
+  margin-top: 5px;
+}
+
+.contact-form fieldset label {
+  display: block;
+  margin: 6px 0;  
+  
+}
+.contact-form button {
+  background-color: #d37e0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a25f09;
+}
+
+/* -- honeypot -- */
+.squirrel {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.paragraph-input {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.to-left {
+  border-left: 4px solid #000;
+}
+
+.douglas {
+  background-color: #d6e5d6;
+}
+
+.douglas-header {
+  background-color: #c9dbc9;
+}
+
+/* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- about.css -----  */
+
+/* ============== CONTRAST: PNW note ============== */
+
+.sidebar .info-card.bad,
+.sidebar .info-card.bad p,
+.sidebar .info-card.bad h3,
+.sidebar .info-card.bad a {
+  color: #fbf6e8 !important; 
+}
+
+/* ============== DETAILS/SUMMARY -> PARK SIGN BUTTONS ============== */
+.sidebar details {
+  margin: 12px 0;
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 0 #7d5b35,             /* ridge */
+    0 6px 12px rgba(0,0,0,0.35);  /* drop */
+  overflow: hidden;
+}
+
+.sidebar summary {
+  list-style: none;
+  display: block;
+  padding: 12px 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #332400;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  outline: none;
+}
+
+
+
+
+
+/* ========== SIDEBAR: UNIFY WIDTH ========== */
+.sidebar {
+  padding: 18px;
+  box-sizing: border-box;
+}
+.sidebar > * {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+.sidebar .forest-background-up,
+.sidebar .about-pnw,
+.sidebar .nav-links,
+.sidebar .sidebar-text-block,
+.sidebar .join-callout {
+  width: 100%;
+}
+
+
+
+/* ========== “IN A NUTSHELL” LIST: DARK GREEN TEXT + BULLETS ========== */
+.sidebar .sidebar-text-block {
+  background:#f7efe0;
+  color:#2b1a05;
+  border:1px solid #3f2805;
+  border-radius:12px;
+  padding:16px 18px;
+  margin-top:16px;
+}
+.sidebar .sidebar-text-block h4 { color:#3f2805; margin-top:0; }
+.sidebar .sidebar-text-block ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 10px 0 0;
+}
+/* Override the yellow: text + bullets */
+.sidebar .sidebar-text-block li { 
+  color:#173b1a;             
+}
+.sidebar .sidebar-text-block li::marker {
+  color:#173b1a;                 /* deep forest green bullets */
+}
+
+
+
+/* ========== JOIN US: BIG BUTTON ========== */
+.join-callout {
+  display:block; width:100%; text-align:center;
+  margin-top:16px; padding:16px 18px;
+
+  border:2px solid #b68a5a; border-radius:12px; font-weight:800;
+
+  text-decoration:none;
+  transition: transform .08s ease, box-shadow .08s ease, filter .12s ease;
+}
+
+
+body.about .nav-links ul {
+  list-style: none;        /* no bullets */
+    
+  margin: 10px 0 0;
+}
+
+body.about .nav-links li {
+  margin: 6px 0;
+}
+
+.sidebar details {
+  width: calc(100% - 30px);
+  margin: 8px 15px;
+  border: 2px solid #b68a5a;
+  border-radius: 10px;
+  background: linear-gradient(#4b2e18, #3b2213);
+  box-shadow: 0 3px 0 #2a180d, 0 8px 16px rgba(0,0,0,.28);
+  overflow: hidden;
+  transition: transform .08s ease, box-shadow .08s ease, filter .12s ease;
+}
+
+.sidebar details:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 #2a180d, 0 12px 22px rgba(0,0,0,.32);
+  filter: brightness(1.04);
+}
+
+.sidebar details:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 #2a180d, 0 6px 12px rgba(0,0,0,.24);
+}
+
+
+
+/* buttons  animate on hover */
+.sidebar { padding: 0 15px; }
+.sidebar details {
+  width: 100%;
+  margin: 8px 0;
+  border: 2px solid #b68a5a;
+  border-radius: 10px;
+  background: linear-gradient(#4b2e18, #3b2213);
+  box-shadow: 0 3px 0 #2a180d, 0 8px 16px rgba(0,0,0,.28);
+  overflow: hidden;
+  transition: transform .08s ease, box-shadow .08s ease, filter .12s ease;
+}
+.sidebar details:hover { transform: translateY(-1px); box-shadow: 0 4px 0 #2a180d, 0 12px 22px rgba(0,0,0,.32); filter: brightness(1.04); }
+.sidebar details:active { transform: translateY(1px); box-shadow: 0 2px 0 #2a180d, 0 6px 12px rgba(0,0,0,.24); }
+
+.sidebar summary {
+  display: block;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff6e0;
+  list-style: revert;
+  font-family: "National Park", Raleway, sans-serif;
+}
+.sidebar summary::-webkit-details-marker { display: inline-block !important; }
+.sidebar summary::before, .sidebar summary::after { content: none !important; }
+
+
+.sidebar details > *:not(summary) {
+  background: #20160b !important;
+  padding: 14px 16px;
+  border-top: 1px solid #3a2a17;
+}
+.sidebar details > *:not(summary),
+.sidebar details > *:not(summary) * {
+  color: #f6efe0 !important;
+}
+.sidebar details > *:not(summary) a {
+  color: #ffd37a !important;
+  text-decoration: underline;
+}
+.sidebar details > *:not(summary) a:hover { color: #ffeaad !important; }
+
+
+  /* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- id.css -----  */
+
+
+.sidebar {
+  box-sizing: border-box;
+  min-width: 320px; 
+  max-width:31%;           
+  padding: 0 8px;       
+}
+
+@media (max-width: 336px) {
+  .sidebar {
+    width: calc(100vw - 16px);
+  }
+}
+
+
+.sidebar .sidebar-card,
+.sidebar .nav-links {
+  box-sizing: border-box;
+  margin: 0 auto;    
+  max-width: 100%;
+}
+
+/*  center */
+.sidebar .four-across,
+.sidebar .glass-frame,
+.sidebar img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Blockquotes */
+.sidebar blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Natural line breaks */
+.sidebar,
+.sidebar p,
+.sidebar li,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar .sidebar-text-block p,
+.sidebar blockquote {
+  overflow-wrap: break-word;    
+  word-break: normal;        
+  hyphens: auto;         
+  -webkit-hyphens: auto;          /* Safari */
+}
+
+
+.sidebar .sidebar-text-block p { text-align: justify; text-justify: inter-word; } 
+
+.main-content blockquote {
+  background: #2a1d0d;
+  color: #f3e7c9;
+  border-left: 4px solid #d3a90f;
+  font-family: 'National Park', serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 16px 24px;
+  margin: 24px auto;
+  width: 100%;
+  max-width: none;
+  border-radius: 8px;
+}
+.main-content blockquote cite {
+  display: block;
+  margin-top: 8px;
+  text-align: right;
+  color: inherit;
+  font-style: normal;
+}
+.main-content blockquote p {
+  text-align: justify;
+  text-justify: inter-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- small-table.css -----  */
+
+/* squirrel size table */
+
+.squirrel-size-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fdfaf4;
+}
+
+.squirrel-size-table th,
+.squirrel-size-table td {
+  padding: 12px;
+  border: 1px solid #aaa;
+}
+
+.native-header {
+  background-color: #c5d4c1; /* lt green */
+  color: #1b1606;
+  font-weight: bold;
+}
+
+.introduced-header {
+  background-color: #e0d0d0; /* soft red */
+  color: #3f0f0f;
+  font-weight: bold;
+}
+
+.squirrel-size-table tbody td {
+  background-color: #fffaf0;
+}
+
+.smallTable.center {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.squirrel-size-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: auto;
+}
+.squirrel-size-table .introduced {
+  background-color: #b46c5d; 
+  color: #1b1606;
+}
+
+
+/* -----   ////   -----  +/
+
+/* Mobile stack: main then sidebar, both full width */
+@media (max-width: 900px) {
+  .main-content,
+  .sidebar {
+    float: none !important;
+    clear: both;                 /* drop out of the float layout entirely */
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;     /* beat the 320px min-width from style.css */
+  }
+
+  /*  tidy spacing */
+  .main-content { margin-bottom: 20px; }
+  .sidebar { padding-left: 0; }  /* remove the desktop left padding */
+}
+
+
+
+
+
+
+/* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- species-polish.css -----  */
+
+
+
+body#species-page .species-banner {
+  --gap: 16px;
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: stretch;
+  justify-content: center;
+}
+body#species-page .species-banner .glass-frame2 {
+  box-sizing: border-box;
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  flex: 0 0 calc((100% - (3 * var(--gap))) / 4) !important;
+  max-width: calc((100% - (3 * var(--gap))) / 4) !important;
+  min-width: 220px;
+}
+body#species-page .species-banner .glass-frame2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 928px) {
+  body#species-page .species-banner .glass-frame2 {
+    flex: 0 0 calc((100% - var(--gap)) / 2) !important;
+    max-width: calc((100% - var(--gap)) / 2) !important;
+  }
+}
+@media (max-width: 456px) {
+  body#species-page .species-banner .glass-frame2 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+  }
+}
+
+body#species-page .char-sign {
+  font-family: 'National Park', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f8f4ea;
+  background: #3f2805;
+  padding: 10px 22px;
+  display: inline-block;
+  border: none;
+  border-radius: 0;
+}
+body#species-page .char-sign-row {
+  text-align: center;
+  margin: 20px 0 12px;
+}
+
+body#species-page .learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: #d87a2e;
+  text-decoration: none;
+  border: 2px solid #d87a2e;
+  font-weight: bold;
+}
+body#species-page .learn-more:hover {
+  background: #d87a2e;
+  color: #1b120a;
+}
+body#species-page .learn-more:focus-visible {
+  outline: 3px solid #ffe8b5;
+  outline-offset: 2px;
+}
+
+body#species-page blockquote {
+  font-family: 'National Park', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.7;
+  text-align: left !important;
+  color: #f3e7c9;
+  background: linear-gradient(145deg, #2a1d0d, #3b2a15);
+  border-left: 6px solid #d37e0f;
+  padding: 20px 28px;
+  margin: 28px auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.35);
+}
+body#species-page blockquote p { margin: 0 0 8px 0; }
+body#species-page blockquote cite {
+  display: block;
+  font-size: 16px;
+  color: #ffd972;
+  text-align: right;
+  margin-top: 10px;
+}
+body#species-page .block-invader {
+  background: linear-gradient(145deg, #3a240f, #4a2b12);
+  color: #ffecd0;
+  border-left-color: #d37e0f;
+}
+
+body#species-page .species-section {
+  --gutter: 24px;
+  --space-1: 12px;
+  --space-2: 20px;
+  --space-3: 28px;
+  --space-4: 40px;
+  margin: var(--space-4) auto;
+  padding: 0;
+}
+body#species-page .species-section > :not(img.fullwidth) {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+body#species-page .species-section .section-head { margin: var(--space-2) auto var(--space-1); }
+body#species-page .species-section h3.light { margin: 0 auto var(--space-2); }
+body#species-page .species-section p.light { max-width: 900px; margin: 0 auto var(--space-3); }
+body#species-page .species-section blockquote { margin: var(--space-3) auto; }
+body#species-page .species-section .list-block {
+  max-width: 900px;
+  margin: var(--space-3) auto var(--space-2);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+body#species-page .species-section p.center .learn-more { margin-top: var(--space-2); }
+body#species-page .species-section p.center { margin: var(--space-2) auto var(--space-4); }
+
+body#species-page img.fullwidth {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+body#species-page .species-section h2.native,
+body#species-page .species-section h2.invader {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100vw;
+  margin: 40px 0 16px;
+  padding: 24px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'National Park', Arial, sans-serif;
+  line-height: 1.2;
+}
+body#species-page .species-section h2.native {
+  background: #1e4e03;
+  color: #f7f2e4;
+  font-size: 32px;
+}
+body#species-page .species-section h2.invader {
+  background: #7a2b0a;
+  color: #ffe7b2;
+  font-size: 36px;
+}
+
+body#species-page #invader-info .info-card h3 {
+  font-family: 'National Park', Arial, sans-serif;
+  font-size: 44px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+body#species-page #invader-info .info-box-p {
+  max-width: 900px;
+  margin: 12px auto 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+body#species-page #eastern blockquote {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+body#species-page .allsite-footer,
+body#species-page .allsite-footer .footer-nav ul,
+body#species-page .allsite-footer .footer-credit {
+  text-align: center;
+}
+body#species-page .allsite-footer .footer-nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+body#species-page .footer-light { text-align: center; }
+body#species-page .footer-light ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: none;
+  width: 100%;
+}
+body#species-page .footer-light li { margin: 0; text-align: center; }
+body#species-page .footer-light a { display: inline-block; }
+
+html, body { overflow-x: clip; }
+
+@media (max-width: 900px) {
+  body#species-page .char-sign { font-size: 20px; line-height: 24px; }
+  body#species-page .species-section { --gutter: 16px; }
+  body#species-page .species-section p.light { font-size: 18px; }
+  body#species-page img.fullwidth { margin-top: 20px; margin-bottom: 20px; }
+  body#species-page .species-section h2.native { font-size: 26px; }
+  body#species-page .species-section h2.invader { font-size: 30px; }
+  body#species-page blockquote { font-size: 22px; line-height: 1.6; padding: 18px 22px; }
+}
+
+body#species-page #invader-info .pull-quote{
+  display:block;
+  text-align:center;
+  font-family:'National Park', Arial, sans-serif;
+  font-weight:700;
+  font-size:clamp(22px,3.4vw,38px);
+  line-height:1.2;
+  color:#7a2b0a;
+  margin:18px auto;
+  padding:6px 12px;
+  max-width:1000px;
+}
+body#species-page #invader-info .pull-quote::before{
+  content:"“";
+  color:#d37e0f;
+  font-size:1.4em;
+  margin-right:.15em;
+  position:relative;
+  top:.05em;
+}
+body#species-page #invader-info .pull-quote::after{
+  content:"”";
+  color:#d37e0f;
+  font-size:1.4em;
+  margin-left:.15em;
+  position:relative;
+  top:.05em;
+}
+
+
+
+/* -----   ////   -----  +/
+/* Lighten text for the melanism evidence block */
+.melanism-evidence {
+  background-color: #2a2723;   /* subtle dark brown/charcoal backdrop */
+  color: #f8f4ec;             /* light parchment text */
+  padding: 20px;
+  border-top: 4px solid #d37e0f;  /* accent line matches your squirrel orange */
+  border-bottom: 4px solid #d37e0f;
+}
+
+/* Adjust inner typography */
+.melanism-evidence h3,
+.melanism-evidence h4,
+.melanism-evidence p {
+  color: #f8f4ec;  /* override any dark site-wide defaults */
+}
+
+.melanism-copy .lede-body {
+  background: rgba(255, 255, 255, 0.08); /* faint light overlay */
+  border: 1px solid #f0d9a1;
+  border-left: 6px solid #d37e0f;
+  color: #fefcf8;   /* very light text inside box */
+}
+
+/* Button style on dark background */
+.melanism-evidence .np-cta {
+  display: inline-block;
+  background: #d37e0f;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.melanism-evidence .np-cta:hover {
+  background: #a95f0b;
+  color: #fff;
+}
+
+
+
+
+/* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- table.css -----  */
+
+
+
+/* tightening spacing */
+
+.table-note { font-size: 18px; color: #f3efdf; margin-top: 8px; }
+ 
+.compare-button {
+  background-color: #446d3e;
+  color: #fff;
+  padding: 12px 20px;
+  margin-top:30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.compare-button:hover {
+  background-color: #345c30;
+}
+
+/* squirrel size table */
+
+.squirrel-size-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fdfaf4;
+}
+
+.squirrel-size-table th,
+.squirrel-size-table td {
+  padding: 12px;
+  border: 1px solid #aaa;
+}
+
+.native-header {
+  background-color: #c5d4c1; /* lt green */
+  color: #1b1606;
+  font-weight: bold;
+}
+
+.introduced-header {
+  background-color: #e0d0d0; /* soft red */
+  color: #3f0f0f;
+  font-weight: bold;
+}
+
+.squirrel-size-table tbody td {
+  background-color: #fffaf0;
+}
+
+.smallTable.center {
+  text-align: center;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.squirrel-size-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: auto;
+}
+.squirrel-size-table .introduced {
+  background-color: #b46c5d; 
+  color: #1b1606;
+}
+
+
+:root {
+  --ink: #f3efdf;
+  --bg: #1b1606;
+  --accent: #d37e0f;
+  --card: #fffdf4;
+  --card-2: #fbf7ea;
+  --line: #e6dcc7;
+  --native: #dae2c1;
+  --introduced: #e4d7cc;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  margin: 0;
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+.ident-compare {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+}
+
+@media (max-width: 600px) {
+  .ident-compare {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ORANGE headings + note (override prior yellows) */
+body.identification .section-title,
+body.identification .section-kicker,
+body.identification .table-note {
+  color: var(--accent);
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  margin: 18px auto 6px;
+}
+
+.pill {
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+.section-kicker {
+  margin-bottom: 14px;
+}
+
+/* Button box */
+.control-box {
+  background: #102617;
+  border: 1px solid #2b532f;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 10px auto 14px;
+  max-width: 720px;
+}
+
+.compare-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  justify-content: center;
+}
+
+.chip {
+  display: inline-block;
+  border: 2px solid #2b532f;
+  background: #0f3b20;
+  color: #f3efdf;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.chip.is-active {
+  border: 3px solid var(--accent);
+  background: var(--accent);
+  color: #1b1606;
+}
+
+.chip:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .control-box {
+    display: none;
+  }
+}
+
+/* Matrix card with dark band behind the Characteristic column */
+.matrix-wrap {
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.12), 0 12px 24px rgba(0,0,0,.18);
+  padding: 10px 12px 12px;
+  margin: 0 auto 40px;
+  background:
+    linear-gradient(to right,
+      var(--bg) 0,
+      var(--bg) 240px,
+      var(--card) 240px,
+      var(--card) 100%);
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  font-size: 0.95rem;
+  color: #1b1606;
+}
+
+.matrix thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  text-align: left;
+  background: var(--card);
+  color: #1b1606;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+}
+
+/* header of first column sits on the dark band */
+.matrix thead th.char {
+  background: transparent;
+  color: var(--ink);
+}
+
+.matrix th,
+.matrix td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+/* Characteristic column: dark and “transparent” look */
+.matrix .char {
+  position: sticky;
+  left: 0;
+  width: 240px;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  z-index: 1;
+  border-right: 1px solid #2a2416;
+}
+
+/* Zebra striping only for data columns, not the char column */
+.matrix tbody tr:nth-child(even) td:not(.char) {
+  background: var(--card-2);
+}
+
+.matrix tbody tr:hover td:not(.char) {
+  background: #f6f0df;
+}
+
+/* Native/Introduced colors by column (works for th and td) */
+.matrix [data-col="western"],
+.matrix [data-col="douglas"] {
+  background-color: var(--native);
+  color: #1b1606;
+}
+
+.matrix [data-col="eastern"],
+.matrix [data-col="fox"] {
+  background-color: var(--introduced);
+  color: #1b1606;
+}
+
+/* keep headers readable even with tint */
+.matrix thead [data-col] {
+  font-weight: 600;
+}
+
+/* Mobile: only show two chosen species */
+@media (max-width: 1023px) {
+  .matrix .char {
+    width: 200px;
+  }
+
+  .matrix th[data-col],
+  .matrix td[data-col] {
+    display: none;
+  }
+
+  .matrix th[data-col].show,
+  .matrix td[data-col].show {
+    display: table-cell;
+  }
+}
+
+
+
+
+
+/*--- */
+/* Dark, readable first column */
+.matrix thead th.char,
+.matrix tbody td.char,
+.matrix thead th:first-child,
+.matrix tbody td:first-child {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+}
+
+/* Keep it pinned and visually separated */
+.matrix .char,
+.matrix th:first-child,
+.matrix td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  box-shadow: inset -1px 0 0 #2a2416;
+}
+
+
+
+
+
+
+/* -----  ////////// ----  ////////////. --------------  ////////////////////. ---  ////////. -- */
+
+/* ---- responsive.css -----  */
+
