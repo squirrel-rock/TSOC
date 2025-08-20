@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    
+    <title>Squirrel Species Comparison Chart</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+ <!-- GOOGLE FONTS CODE TO LOAD FONTS -->
+  <!-- Bootstrap -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+<!-- Loading Source Serif Pro and Raleway from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Source+Serif+Pro:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/sidebar.css">
+<link rel="stylesheet" href="../css/table.css">
+<link rel="stylesheet" href="../css/species-polish.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<style>
+
+  hr { opacity: 1 !important; }
+</style>
+  </head>
+
+<!-- //////// header  //////// -->
+<header class="topnav-header">
+  <div class="nav-top-row spaceboxDark">
+    <div class="nav-logo">
+      <img src="../logo/TSOClogo.png" alt="TSOC logo">
+    </div>
+    <div class="nav-row nav-row-primary">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" >Contact</a>
+    </div>
+    </div>
+    
+  <div class="nav-row nav-row-secondary">
+      <a href="identification.html" class="active">ID Guide</a>
+         <a href="identification-full.html" class="active">Compare Chart</a>
+      <a href="species.html">Species Info</a>
+      <a href="../CS50C_Week9/inLeaflet.html">Range Maps</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    
+  
+</header>
+
+
+
+  <!--  /////// BODY ////////////. -->
+<body class="identification-full" data-bs-theme="dark">
+  <main class="page-shell">
+    <div class="fullwidth">
+    <h1 class="banner-top">Squirrel Chart</h1></div>
+    <hr class="branchLeaf-divider" style="margin-top:36px;">
+
+<section class="compare-smart text-center" data-bs-theme="light">
+  <h2 class="section-title pill text-center">Quick Compare: <br>California’s Four Resident Tree Squirrels</h2>
+  <p class="section-kicker">On smaller screens, chart becomes interactive - select squirrels using buttons</p>
+
+  <div class="compare-controls" aria-label="Choose species to compare">
+    <button class="chip is-active" data-choice="western">Western Gray</button>
+    <button class="chip is-active" data-choice="eastern">Eastern Gray</button>
+    <button class="chip" data-choice="fox">Fox Squirrel</button>
+    <button class="chip" data-choice="douglas">Douglas Squirrel</button>
+  </div>
+
+  <div class="matrix-wrap">
+    <table class="matrix" aria-describedby="compare-note">
+      <thead>
+        <tr>
+          <th class="char"> </th>
+          <th data-col="western">Western Gray</th>
+          <th data-col="eastern">Eastern Gray</th>
+          <th data-col="fox">Fox Squirrel</th>
+          <th data-col="douglas">Douglas Squirrel<br><small>(smaller native)</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="char"> Scientific Name</td>
+          <td data-col="western"><em>Sciurus griseus</em></td>
+          <td data-col="eastern"><em>Sciurus carolinensis</em></td>
+          <td data-col="fox"><em>Sciurus niger</em></td>
+          <td data-col="douglas"><em>Tamiasciurus douglasii</em></td>
+        </tr>
+        <tr>
+          <td class="char">Length</td>
+          <td data-col="western">18–24 in total</td>
+          <td data-col="eastern">16–20 in total</td>
+          <td data-col="fox">19–27 in total</td>
+          <td data-col="douglas">8–12 in total <em>(about half)</em></td>
+        </tr>
+        <tr>
+          <td class="char">Native or Introduced</td>
+          <td data-col="western">Native to West Coast</td>
+          <td data-col="eastern">Introduced from East/Southeast U.S.</td>
+          <td data-col="fox">Introduced from Midwest/Southeast U.S.</td>
+          <td data-col="douglas">Native to Pacific Northwest and Sierra/Cascade forests</td>
+        </tr>
+        <tr>
+          <td class="char">Tail Appearance</td>
+          <td data-col="western">Long, feathery, silver-tipped</td>
+          <td data-col="eastern">Scruffier, thinner, slightly shorter</td>
+          <td data-col="fox">Large, bushy chestnut to orange with black highlights</td>
+          <td data-col="douglas">Shorter with frosty edges; distinct two-tone coat</td>
+        </tr>
+        <tr>
+          <td class="char">Behavior</td>
+          <td data-col="western">Shy, tree-dwelling, quiet</td>
+          <td data-col="eastern">Bold, invasive, noisy</td>
+          <td data-col="fox">Aggressive, highly urban-adapted</td>
+          <td data-col="douglas">Loud, territorial; forest-dwelling</td>
+        </tr>
+        <tr>
+          <td class="char">Vocalization</td>
+          <td data-col="western"><em>Low “kuk kuk kuk”</em>, soft warbling</td>
+          <td data-col="eastern">Raspy squeaks, harsh chatter</td>
+          <td data-col="fox">Guttural grunts, harsh barking</td>
+          <td data-col="douglas">High-pitched chirps, descending trill, soft cooing</td>
+        </tr>
+        <tr>
+          <td class="char">Habitat</td>
+          <td data-col="western">Native woodlands, oak, pine</td>
+          <td data-col="eastern">Urban areas, parks, gardens</td>
+          <td data-col="fox">Suburbs, county parks, farms</td>
+          <td data-col="douglas">Conifer forests with dense understory</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="compare-note" class="table-note">The Douglas squirrel is native but much smaller, so it’s rarely misidentified.</p>
+  </div>
+</section>
+
+<style>
+:root{--ink:#f3efdf;--bg:#000;--accent:#d37e0f;--card:#fffdf4;--card2:#fbf7ea;--line:#e6dcc7}
+body{font-family:Arial,Helvetica,sans-serif}
+body.identification{--bs-body-color:var(--ink);color:var(--ink);background:var(--bg)}
+.section-title{color:var(--accent);text-align:center;margin:18px 0 6px}
+.section-kicker{text-align:center;opacity:.9;margin-bottom:12px}
+.compare-smart{max-width:1280px;margin:0 auto;padding:0 20px}
+.compare-controls{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:2px solid #2b532f;background:#0f3b20;color:#f3efdf;border-radius:999px;padding:8px 14px;font-size:14px;letter-spacing:.2px}
+.chip.is-active{outline:2px solid #5a8a5f}
+.matrix-wrap{background:var(--card);border-radius:14px;box-shadow:0 1px 0 rgba(0,0,0,.12),0 12px 24px rgba(0,0,0,.18);padding:10px 12px}
+.matrix{width:100%;border-collapse:separate;border-spacing:0;table-layout:auto;color:#1b1606}
+.matrix thead th{position:sticky;top:0;background:var(--card);z-index:2}
+.matrix th,.matrix td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.matrix .char{font-weight:600;width:240px}
+.matrix tbody tr:nth-child(even) td{background:var(--card2)}
+.matrix tbody tr:hover td{background:#f6f0df}
+.table-note{font-size:15px;color:#1b1606;margin:8px 2px 2px}
+@media (min-width:1024px){
+  .compare-controls{display:none}
+}
+
+</style>
+
+
+<script>
+(function () {
+  const chips = Array.from(document.querySelectorAll('.compare-controls .chip'));
+  const colCells = Array.from(document.querySelectorAll('[data-col]'));
+
+  function showColumns(keys) {
+    colCells.forEach(c => c.classList.remove('show'));
+    keys.forEach(k => {
+      document.querySelectorAll('[data-col="' + k + '"]').forEach(c => c.classList.add('show'));
+    });
+  }
+
+  function setActive(keys) {
+    chips.forEach(ch => ch.classList.toggle('is-active', keys.includes(ch.dataset.choice)));
+  }
+
+  function isMobile() {
+    return window.matchMedia('(max-width: 1023px)').matches;
+  }
+
+  function initState() {
+    if (isMobile()) {
+      const defaults = ['western', 'eastern'];
+      setActive(defaults);
+      showColumns(defaults);
+    } else {
+      setActive([]); /* hidden on desktop */
+      showColumns(['western', 'eastern', 'fox', 'douglas']);
+    }
+  }
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      if (!isMobile()) return;
+
+      const active = chips.filter(c => c.classList.contains('is-active')).map(c => c.dataset.choice);
+
+      if (chip.classList.contains('is-active')) {
+        if (active.length > 1) {
+          chip.classList.remove('is-active');
+        }
+      } else {
+        if (active.length < 2) {
+          chip.classList.add('is-active');
+        } else {
+          const first = chips.find(c => c.classList.contains('is-active'));
+          if (first) first.classList.remove('is-active');
+          chip.classList.add('is-active');
+        }
+      }
+
+      const next = chips.filter(c => c.classList.contains('is-active')).map(c => c.dataset.choice);
+      if (next.length === 0) {
+        setActive(['western', 'eastern']);
+        showColumns(['western', 'eastern']);
+      } else if (next.length === 1) {
+        const add = ['western', 'eastern', 'fox', 'douglas'].find(k => k !== next[0]);
+        setActive([next[0], add]);
+        showColumns([next[0], add]);
+      } else {
+        showColumns(next.slice(0, 2));
+      }
+    });
+  });
+
+  window.addEventListener('resize', initState);
+  window.addEventListener('orientationchange', initState);
+  document.addEventListener('DOMContentLoaded', initState);
+})();
+</script>
+
+
+<br>
+
+<hr class="squirrel-dividerLookUp">
+
+<footer>
+
+<!-- TEMPORARY NAV SECTION -->
+  <!-- Explore More Links -->
+  <div class="footer-light text-center">
+    <h3 class="text-center">Explore More</h3>
+    <ul class="text-center">
+        <li><a href="identification.html">Squirrel ID</a></li>
+              <li>  <a href="../CS50C_Week9/inLeaflet.html">Range Maps</a></li> 
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="squirrel-evolution.html">Squirrel Evolution</a></li>
+   
+    </ul>
+  </div>
+<hr>
+
+</div>
+
+
+<footer class="allsite-footer">
+  <nav class="footer-nav">
+    <ul>
+      <li class="text-center"><a href="../index.html">Home</a></li>
+        <li class="text-center"><a href="about.html">About</a></li>
+    
+        <li class="text-center"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <p class="footer-credit">Website designed by Kelly Durkin &bull; &copy; 2025</p>
+</footer>
+  </main>
+</body>
+</html>
